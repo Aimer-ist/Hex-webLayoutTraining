@@ -1,0 +1,111 @@
+$primary: #650300;
+$secondary: #AA0601;
+$light: #AA06010D;
+$white: #FFFFFF;
+$bark: #000000;
+
+@mixin ipad {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans', serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  // display: block;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+// 字體
+.h1 {
+  font-size: 4rem;
+}
+.h2 {
+  font-size: 3rem;
+}
+.h3 {
+  font-size: 2.25rem;
+  @include ipad {
+    font-size: 1.25rem;
+  }
+}
+.h6 {
+  font-size: 1.25rem;
+}
+.text-center {
+  text-align: center;
+}
+
+// 字體顏色
+.text-light {
+  color: $white;
+}
+.text-bark {
+  color: $bark;
+}
+.text-primary {
+  color: $primary;
+}
+.text-secondary {
+  color: $secondary;
+}
+
+// flex
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.align-item-center {
+  align-items: center;
+}
+.order {
+  order: 1;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+// bg
+.bg-secondary {
+  background-color: $secondary;
+}
+.bg-light {
+  background-color: $light;
+}
+
+// 邊距
+.mr-auto {
+  margin-right: auto;
+}
