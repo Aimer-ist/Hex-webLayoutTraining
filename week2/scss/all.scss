@@ -1,0 +1,200 @@
+@import'reset';
+$light: #ffffff;
+$dark: #000000;
+$specially: #891818; 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 900;
+}
+
+// 範圍 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// flex 設定 
+.d-flex {
+  display: flex;
+}
+.jc {
+  &-center {
+    justify-content: center;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+  &-around {
+    justify-content: space-around;
+  }
+}
+.fxd {
+  &-column {
+    flex-direction: column;
+  }
+}
+.fxw {
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+// 字體設定
+.title {
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 500;
+}
+.t-center {
+  text-align: center;
+}
+.fw {
+  &-medium {
+    font-weight: 500;
+  }
+  &-bold {
+    font-weight: 700;
+  }
+}
+.fz {
+  &-6 {
+    font-size: 24px;
+    line-height: 42px;
+  }
+  &-5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+// [改] 原.color-white
+.color-light { 
+  color: $light;
+}
+
+// 列表的文字設定 
+.list-fz-5 li {
+  font-size: 24px;
+  line-height: 42px;
+  &.lh-36 {
+    line-height: 36px;
+  }
+}
+
+// 背景設定 
+.bg-dark {
+  background-color: $dark;
+}
+
+// 邊距設定 
+.m {
+  &b {
+    &-1 {
+      margin-bottom: 8px;
+    }
+    &-2 {
+      margin-bottom: 16px;
+    }
+    &-3 {
+      margin-bottom: 24px;
+    }
+    &-4 {
+      margin-bottom: 32px;
+    }
+    &-5 {
+      margin-bottom: 40px;
+    }
+    &-6 {
+      margin-bottom: 48px;
+    }
+    &-7 {
+      margin-bottom: 56px;
+    }
+    &-8 {
+      margin-bottom: 64px;
+    }
+  }
+  &r-3 {
+    margin-right: 24px;
+  }
+  &x-auto {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.p {
+  &b {
+    &-10 {
+      padding-bottom: 80px;
+    }
+    &-20 {
+      padding-bottom: 160px;
+    }
+  }
+  &t-8 {
+    padding-top: 64px;
+  }
+  &x-1 {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  &y-4 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+// 其他
+.d-block {
+  display: block;
+}
+.banner {
+  height: 958px;
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/banner.png?raw=true) center;
+  background-size: cover;
+}
+.experience {
+  width: 384px;
+  border-top: 1px solid #000;
+}
+.experience-item {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    background-color: $specially;
+    border-radius: 50%;
+    top: 10px;
+    width: 22px;
+    height: 22px;
+    margin-left: -38px;
+  }
+}
+.contact-link {
+  color: $light;
+  transition: all 0.3s;
+  &:hover {
+    color: $specially;
+  }
+}
