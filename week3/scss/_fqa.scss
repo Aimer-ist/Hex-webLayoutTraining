@@ -1,0 +1,73 @@
+.fqa__banner {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 304px;
+  @include ipad {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include phone {
+    height: 143px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  img {
+    height: 57px;
+    @include ipad {
+      height: 48px;
+    }
+    @include phone {
+      height: 24px;
+      margin-left: 8px;
+    }
+  }
+}
+.fqa__banner__inner {
+  width: 100%;
+}
+.fqa__inner {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include ipad {
+    padding: 40px 39px;
+  }
+  @include phone {
+    padding: 24px 15px;
+  }
+  .h4 {
+    @include phone {
+      margin-bottom: 12px;
+    }
+  }
+}
+.fqa-list__item {
+  margin-bottom: 40px;
+  @include phone {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin-bottom: 16px;
+    @include phone {
+      margin-bottom: 8px;
+    }
+  }
+  p {
+    margin-left: 96px;
+    @include ipad {
+      margin-left: 56px;
+    }
+    @include phone {
+      text-align:justify;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+  br {
+    @include phone {
+      display: none;
+    }
+  }
+}

@@ -23,9 +23,12 @@ $bark: #000000;
 }
 
 body {
-  font-family: 'Noto Sans', serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  @include phone {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -46,6 +49,15 @@ img {
 // 字體
 .h1 {
   font-size: 4rem;
+  line-height: 90px;
+  @include ipad {
+    font-size: 48px;
+    line-height: 67px;
+  }
+  @include phone {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 .h2 {
   font-size: 3rem;
@@ -53,16 +65,31 @@ img {
 .h3 {
   font-size: 2.25rem;
   @include ipad {
-    font-size: 1.25rem;
+    font-size: 20px;
+  }
+}
+.h4 {
+  font-size: 2rem;
+  line-height: 45px;
+  @include phone {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 .h6 {
   font-size: 1.25rem;
+  line-height: 28px;
+  @include phone {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.text-bold {
+  font-weight: 700;
 }
 .text-center {
   text-align: center;
 }
-
 // 字體顏色
 .text-light {
   color: $white;
@@ -90,11 +117,14 @@ img {
 .align-item-center {
   align-items: center;
 }
-.order {
-  order: 1;
+.aling-item-end {
+  align-items: flex-end;
 }
 .flex-wrap {
   flex-wrap: wrap;
+}
+.order {
+  order: 1;
 }
 
 // bg
@@ -106,6 +136,29 @@ img {
 }
 
 // 邊距
-.mr-auto {
-  margin-right: auto;
+.m {
+  &b- {
+    &auto {
+      margin-bottom: auto;
+    }
+    &2 {
+      margin-bottom: 16px;
+    }
+    &4 {
+      margin-bottom: 36px;
+    }
+    &5 {
+      margin-bottom: 40px;
+    }
+  }
+  &l- {
+    &2 {
+      margin-left: 1rem;
+    }
+  }
+  &r- {
+    &auto {
+      margin-right: auto;
+    }
+  }
 }
