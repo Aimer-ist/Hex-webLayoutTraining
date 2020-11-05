@@ -239,6 +239,65 @@ img {
   margin-right: auto;
 }
 
+.banner {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 304px;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 143px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.banner img {
+  height: 57px;
+}
+
+@media (max-width: 992px) {
+  .banner img {
+    height: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner img {
+    height: 24px;
+    margin-left: 8px;
+  }
+}
+
+.banner__inner {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .banner__title {
+    font-size: 48px;
+    line-height: 67px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -424,6 +483,65 @@ img {
 
 .mr-auto {
   margin-right: auto;
+}
+
+.banner {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 304px;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 143px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.banner img {
+  height: 57px;
+}
+
+@media (max-width: 992px) {
+  .banner img {
+    height: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner img {
+    height: 24px;
+    margin-left: 8px;
+  }
+}
+
+.banner__inner {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .banner__title {
+    font-size: 48px;
+    line-height: 67px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 
 .header {
@@ -645,51 +763,6 @@ img {
   }
 }
 
-.fqa__banner {
-  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 100%;
-  height: 304px;
-}
-
-@media (max-width: 992px) {
-  .fqa__banner {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .fqa__banner {
-    height: 143px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-.fqa__banner img {
-  height: 57px;
-}
-
-@media (max-width: 992px) {
-  .fqa__banner img {
-    height: 48px;
-  }
-}
-
-@media (max-width: 767px) {
-  .fqa__banner img {
-    height: 24px;
-    margin-left: 8px;
-  }
-}
-
-.fqa__banner__inner {
-  width: 100%;
-}
-
 .fqa__inner {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -723,12 +796,12 @@ img {
   }
 }
 
-.fqa-list__item h3 {
+.fqa-list__item h4 {
   margin-bottom: 16px;
 }
 
 @media (max-width: 767px) {
-  .fqa-list__item h3 {
+  .fqa-list__item h4 {
     margin-bottom: 8px;
   }
 }
