@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>眼鏡電商</title>
+  <title>眼鏡電商-門市據點</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="scss/all.css">
 </head>
@@ -25,8 +25,41 @@
       </li>
     </ul>
   </div>
-  <div class="main fqa-section">
-    內容
+  <div class="mpaDetail">
+    <div class="banner d-flex aling-item-end">
+      <div class="banner__inner container d-flex align-item-center">
+        <h2 class="banner__title h1  text-bold">門市據點</h2>
+        <img class="ml-2" src="img/icon-location.svg" alt="">
+      </div>
+    </div>
+    <div class="container mpaDetail__inner d-flex justify-content-between flex-wrap">
+      <div class="mapSelect">
+        <label class="mapSelect__label" for="location">選擇分店</label>
+        <select class="mapSelect__select" name="location" id="locationId">
+          <option value="台北中山旗艦店">台北中山旗艦店</option>
+          <option value="台北敦化旗艦店">台北敦化旗艦店</option>
+          <option value="台北信義旗艦店">台北信義旗艦店</option>
+        </select>
+      </div>
+      <div class="mapCard">
+        <img class="mapCard__img" src="img/locate1.jpeg" alt="" >
+        <div class="mapCard__body">
+          <h2 class="mapCard__title h5 text-bold">台北中山旗艦店</h2>
+          <ul class="mapCard__contentList">
+            <li class="mapCard__item h6">
+              <img class="mapCard__iconImg" src="img/icon-phone-black.svg" alt="">電話：(02)000-1234
+            </li>
+            <li class="mapCard__item h6">
+              <img class="mapCard__iconImg" src="img/icon-clock-black.svg" alt="">營業時間：10:00-21:00
+            </li>
+            <li class="mapCard__item h6">
+              <img class="mapCard__iconImg" src="img/icon-map.svg" alt="">地址：台北市中山區南京東路25巷2-1號
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img class="mpaDetail__mapImg" src="img/google-maps.png" alt="">
+    </div>
   </div>
   <div class="footer bg-secondary">
     <div class="footer-inner container text-light">
