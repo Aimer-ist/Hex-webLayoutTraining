@@ -31,6 +31,10 @@
 .h5 {
   font-size: 1.5rem;
   line-height: 36px;
+  @include ipad {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .h6 {
   font-size: 1.25rem;
@@ -86,6 +90,9 @@
 }
 
 // bg
+.bg-dark {
+  background-color: getColor('dark');
+}
 .bg-secondary {
   background-color: getColor('secondary');
 }

@@ -1,0 +1,41 @@
+.mapDetail {
+  &__inner {
+    padding-top: 16px;
+    padding-bottom: 304px;
+    @include ipad {
+      padding-top: 8px;
+      padding-bottom: 104px;
+    }
+  }
+  .mapCard {
+    @include ipad {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      &__img {
+        width: 49%;
+        height: 164px;
+      }
+      &__body {
+        width: 49%;
+      }
+    }
+    @include phone {
+      &__img {
+        width: 100%;
+      }
+      &__body {
+        width: 100%;
+      }
+    }
+  }
+  &__mapImg {
+    width: 58%;
+    @include ipad {
+      width: 100%;
+    }
+  }
+}
+
