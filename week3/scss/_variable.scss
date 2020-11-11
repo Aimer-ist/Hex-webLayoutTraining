@@ -1,0 +1,28 @@
+$colors: (
+  primary: #650300,
+  secondary: #AA0601,
+  secondaryLight: #AA06010D,
+	light: white,
+	dark: black,
+);
+
+$fontWeights: (
+	regular: 400,
+	bold: 700,
+	black: 900,
+);
+
+$direction: (
+	t: top,
+	b: bottom,
+	r: right,
+	l: left,
+	x: x,
+	y: y,
+);
+
+$screenPoint: (
+	pc: '',
+	ipad: 'md_',
+	phone: 'sm_',
+)

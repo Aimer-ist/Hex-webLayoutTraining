@@ -1,146 +1,111 @@
-@import'utility';
 // 頁首
 .header {
-  padding: 30px 88px;
+  &__logo {
+    display: block;
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 49px;
+    width: 80px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 29.5px;
+    margin-bottom: 29.5px;
+  }
   @include ipad {
-    padding: 30px 39px;
+    padding-left: 39px;
+    padding-right: 7px;
   }
   @include phone {
     padding: 0;
     flex-direction: column;
+    &__logo {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 29px;
+      width: 48px;
+    }
   }
 }
 
-.header-logo {
-  display: block;
-  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 49px;
-  width: 80px;
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-  @include phone {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 29px;
-    width: 48px;
+.headerMenu {
+  height: 100%;
+  a:hover {
+    background-color: getColor('primary');
   }
-}
-.header-menu {
   @include phone {
     width: 100%;
     flex-wrap: wrap;
-  }
-}
-.header-menu__item {
-  margin-left: 64px;
-  @include ipad {
-    margin-left: 40px;
-  }
-  @include phone {
-    margin-left: 0;
-    text-align: center;
-    width: 50%;
-    border: 1px solid $white;
-    a {
-      display: block;
-      margin: 8px auto;
+    &__item {
+      text-align: center;
+      width: 50%;
+      border: 1px solid color('light');
     }
   }
 }
 
 // 頁尾
-.footer-inner {
-  padding-top: 36px;
-  padding-bottom: 28px;
-  @include ipad {
-    padding: 40px 48px;
+.footer {
+  &__menuGroup {
+    border-bottom: 1px solid getColor('light');
+    @include phone {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
   }
-  @include phone {
-    padding: 24px 15px;
-  }
-}
-.footer-MenuIconContact {
-  border-bottom: 1px solid $white;
-  margin-bottom: 24px;
-  padding-bottom: 5px;
-  @include ipad {
-    padding-bottom: 16px;
-  }
-  @include phone {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+  a {
+    color: getColor('light');
+    transform: translateY(0px);
+    transition: .2s;
+    &:hover {
+      transform: translateY(-4px);
+    }
   }
 }
-.footer-MenuIcon {
-  margin-bottom: 18px;
-  @include ipad {
-    margin-bottom: 24px;
-  }
-  @include phone {
-    margin-bottom: 18px;
-  }
-}
-
-.footer-menu {
+.footerMenu {
   @include phone {
     display: none;
   }
 }
-.footer-menu__item {
-  margin-right: 48px;
-  @include ipad {
-    margin-right: 40px;
-  }
-}
 
-.footer-icon__item {
-  margin-left: 32px;
-  @include ipad {
-    margin-left: 24px;
-    img {
+.footerIocnMenu,
+.footerContact {
+  img {
+    @include ipad {
       max-width: 24px;
     }
   }
-  &:first-child {
-    margin-left: 0;
+}
+
+.footerContact {
+  &__item a {
+    display: inline-block;
+    @include phone {
+      &.h3 {
+        font-size: 16px;
+      }
+    }
   }
 }
 
-.footer-contact__item {
-  margin-bottom: 17px;
+.footerCopyright {
   @include ipad {
-    margin-bottom: 11px;
-    img {
-      max-width: 24px;
+    &__logo {
+      display: none;
     }
   }
   @include phone {
-    margin-bottom: 7px;
-  }
-}
-
-.footer-copyright {
-  @include phone {
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
-  }
-}
-.footer-copyright__item {
-  @include phone {
-    margin-bottom: 7px;
-  }
-  &:last-child {
-    margin-left: 62px;
-    @include ipad {
-      margin-left: 24px;
-    }
-    @include phone {
-      margin-left: 0;
-      margin-bottom: 0;
+    &__logo {
+      display: inline;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      max-width: 46px;
     }
   }
 }
