@@ -1,42 +1,10 @@
-.fqa__inner {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  @include ipad {
-    padding: 40px 39px;
-  }
+.fqaList__item {
   @include phone {
-    padding: 24px 15px;
-  }
-  .h4 {
-    @include phone {
-      margin-bottom: 12px;
-    }
-  }
-}
-.fqa-list__item {
-  margin-bottom: 40px;
-  @include phone {
-    margin-bottom: 20px;
-  }
-  h4 {
-    margin-bottom: 16px;
-    @include phone {
-      margin-bottom: 8px;
-    }
-  }
-  p {
-    margin-left: 96px;
-    @include ipad {
-      margin-left: 56px;
-    }
-    @include phone {
+    p {
       text-align:justify;
-      margin-left: 0;
-      margin-bottom: 20px;
+      font-size: 14px;
     }
-  }
-  br {
-    @include phone {
+    br {
       display: none;
     }
   }
