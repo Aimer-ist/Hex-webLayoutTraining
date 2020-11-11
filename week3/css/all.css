@@ -1850,7 +1850,7 @@ img {
   .headerMenu__item {
     text-align: center;
     width: 50%;
-    border: 1px solid color("light");
+    border: 1px solid white;
   }
 }
 
