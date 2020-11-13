@@ -1,3 +1,37 @@
+// 分頁
+.pageList {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 24px;
+  &__item {
+    border: 1px solid #555;
+    border-right: none;
+    &:nth-last-child(1) {
+      border-right: 1px solid #555;
+    }
+    a {
+      color: #555;
+      padding: 10px 14px;
+    }
+    &--active {
+      background-color: getColor('dark');
+      a {
+        color: getColor('light');
+      }
+    }
+    &--disabled {
+      background-color: #F2F2F2;
+    }
+  }
+  @include phone {
+    font-size: 12px;
+    line-height: 18px;
+    a {
+      padding: 8px 10px;
+    }
+  }
+}  
 .banner {
   background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true);
   background-position: center center;

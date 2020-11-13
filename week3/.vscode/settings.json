@@ -10,5 +10,7 @@
           "extensionName": ".css",
           "savePath": "/css/"
       }
-  ]
+],
+"editor.wordWrap": "wordWrapColumn",
+"editor.wordWrapColumn": 100
 }
