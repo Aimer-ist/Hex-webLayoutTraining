@@ -149,3 +149,21 @@
     }
   }
 }
+
+// 部落格 
+.blog {
+  &__subMenu {
+    @include phone {
+      display: none;
+    }
+  }
+  .subMenu__item {
+    a {
+      border: 1px solid getColor('primary');
+      &:hover {
+        background-color: getColor('secondary');
+        border: 1px solid getColor('light');
+      }
+    }
+  }
+}
