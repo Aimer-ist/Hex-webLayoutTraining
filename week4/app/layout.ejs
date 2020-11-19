@@ -6,19 +6,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
+  <link rel="shortcut icon" href="./assets/images/Hexgon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
+  <header class="header bg-secondary d-flex justify-content-between align-item-center pr-7 pr-md-3 pl-11 pl-md-5 px-sm-0 flex-sm-column">
+    <h1>
+      <a class="header__logo my-sm-1" href="index.html">
+        <img src="./assets/images/logo.png" alt="logo">
+      </a>
+    </h1>
+    <nav class="header__menu w-sm-100">
+      <ul class="header__list d-flex flex-sm-wrap">
+        <li class="header__item w-sm-50"><a class="font-h6 text-center py-5 px-4 py-sm-1 px-md-2"href="./productOptical.html">系列鏡框</a></li>
+        <li class="header__item w-sm-50"><a class="font-h6 text-center py-5 px-4 py-sm-1 px-md-2"href="#">門市據點</a></li>
+        <li class="header__item w-sm-50"><a class="font-h6 text-center py-5 px-4 py-sm-1 px-md-2"href="#">&ensp;部落格&ensp;</a></li>
+        <li class="header__item w-sm-50"><a class="font-h6 text-center py-5 px-4 py-sm-1 px-md-2"href="#">常見問題</a></li>
+      </ul>
+    </nav>
   </header>
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
+  <footer class="bg-secondary py-4 py-md-5 py-sm-3">
+    <div class="container d-flex flex-wrap justify-content-between">
+      <div class="footer__header">
+        <nav>
+          <ul class="footer__menu d-flex mb-md-3">
+            <li><a class="mr-5 py-2 py-md-0" href="#">首頁</a></li>
+            <li><a class="mr-5 py-2 py-md-0" href="#">系列鏡框</a></li>
+            <li><a class="mr-5 py-2 py-md-0" href="#">門市據點</a></li>
+            <li><a class="mr-5 py-2 py-md-0" href="#">部落格</a></li>
+            <li><a class="mr-5 py-2 py-md-0" href="#">常見問題</a></li>
+          </ul>
+        </nav>
+        <ul class="footer__contact mb-2">
+          <li>
+            <a class="font-h4 font-h5-md font-p-sm mb-2 mb-md-1" href="tel:+0800-000-000">
+              <i class="fas fa-phone-alt mr-2"></i>0800-000-000</a></li>
+          <li>
+            <a class="font-h4 font-h5-md font-p-sm " href="mailto:glasses@business.com">
+              <i class="far fa-envelope mr-2"></i>glasses@business.com</a></li>
+        </ul>
+      </div>
+      <ul class="footer__sns d-flex">
+        <li>
+          <a class="font-h2 font-h5-md line-height" href="#" target="_blank">
+            <i class="fab fa-facebook"></i></a></li>
+        <li>
+          <a class="font-h2 font-h5-md ml-3 line-height" href="#" target="_blank">
+            <i class="fab fa-instagram"></i></a></li>
+        <li>
+          <a class="font-h2 font-h5-md ml-3 line-height" href="#" target="_blank">
+            <i class="fab fa-line"></i></a></li>
+      </ul>
+      <div class="footer__others w-100 d-flex align-item-center pt-3 pt-sm-2 flex-sm-column align-item-sm-start">
+        <a class="footer__logo mr-5" href="#">
+          <img src="./assets/images/logo.png" alt="logo"></a>
+        <p class="footer__copyrught text-light mr-auto mb-sm-1">Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="footer__policy d-flex flex-sm-column">
+          <li><a class="mr-8 mr-md-3 mr-sm-0 mb-sm-1" href="#">隱私權政策</a></li>
+          <li><a href="#">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
+
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>

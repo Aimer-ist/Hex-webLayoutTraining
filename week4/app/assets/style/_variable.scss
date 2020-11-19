@@ -1,0 +1,56 @@
+$colors: (
+  primary: #650300,
+  secondary: #AA0601,
+  secondaryLight: #AA06010D,
+  dark: #000000,
+  dark-700: #212529,
+  dark-600: #555555,
+  dark-500: #707070,
+  dark-300: #dee2e6,
+  dark-100: #dcdcdc,
+  light: #FFFFFF,
+);
+
+$font-weights: (
+  regular: 400,
+  medium: 500,
+  bold: 700,
+  bolder: 900,
+);
+
+// font-family
+$font-family-base: 'Roboto', 'Noto Sans TC', 
+                    -apple-system, BlinkMacSystemFont, // Mac 
+                    "Segoe UI", "Microsoft JhengHei", // 微軟
+                    "Helvetica Neue", Arial, sans-serif;
+
+$font-family-Noto: 'Noto Sans TC', Arial, sans-serif;
+
+// font-size
+$line-height-base: 1;
+$font-size-base: 16px;
+$font-size-scale: (
+  font-h1: 4,      // 64px
+  font-h2: 3,      // 48px
+  font-h3: 2.625,  // 42px
+  font-h4: 2,      // 32px
+  font-h5: 1.5,    // 24px
+  font-h6: 1.25,   // 20px
+  font-p: 1,
+  font-span: 0.875,  // 14px
+);
+
+$direction: (
+  t: top,
+  b: bottom,
+  r: right,
+  l: left,
+  x: x,
+  y: y,
+);
+
+$screenPoint: (
+	pc: '',
+	pad: 'md-',
+	mobile: 'sm-',
+)

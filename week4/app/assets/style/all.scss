@@ -1,23 +1,13 @@
-$color: #00cc99;
+@import'variable';
+@import'mixin';
+@import'reset';
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import'base';
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import'utility';
+@import'layout';
+@import'./components/pagination';
+@import'./components/card';
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import'./pages/productOptical';
+@import'./pages/productSunglasses';

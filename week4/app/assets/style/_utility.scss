@@ -1,0 +1,29 @@
+@import'./utility/space';
+@import'./utility/flex';
+@import'./utility/text';
+
+.w-100 {
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.d-none {
+  display: none;
+}
+
+@include pad {
+  .d-md-block {
+    display: block;
+  }
+}
+
+@include mobile {
+  .w-sm-100 {
+    width: 100%;
+  }
+  .w-sm-50 {
+    width: 50%;
+  }
+}
+

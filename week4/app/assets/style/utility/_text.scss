@@ -1,0 +1,37 @@
+// font-size
+@each $key, $val in $font-size-scale {
+  .#{$key} {
+    font-size: $font-size-base * $val;
+  }
+  @include pad {
+    .#{$key}-md {
+      font-size: $font-size-base * $val;
+    }
+  }
+  @include mobile {
+    .#{$key}-sm {
+      font-size: $font-size-base * $val;
+    }
+  }
+}
+
+// font-weight
+@each $key, $val in $font-weights {
+  .font-#{$key} {
+    font-weight: $val;
+  }
+}
+
+// color
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+  .bg-#{$key} {
+    background-color: $val;
+  }
+};
+
+.text-uppercase {
+  text-transform:uppercase;
+}
