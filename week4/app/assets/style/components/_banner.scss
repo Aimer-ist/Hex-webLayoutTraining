@@ -1,0 +1,19 @@
+.banner {
+  position: relative;
+  height: 304px;
+  background: url('./../images/blog-4.png') no-repeat center;
+  background-size: cover;
+  @include mobile {
+    height: 143px;
+  }
+  &__title {
+    position: absolute;
+    bottom: 0;
+  }
+  &__icon {
+    display: block;
+    @include mobile {
+        width: 1.5rem;
+    }
+  }
+}
