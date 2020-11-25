@@ -1,0 +1,54 @@
+// location 門市據點的共通樣式
+.location {
+  section {
+    padding-top: 1rem;
+    padding-bottom: 19rem;
+    @include pad {
+      padding-top: 0.5rem;
+      padding-bottom: 6.5rem;
+    }
+    @include mobile {
+      padding-bottom: 3.5rem;
+    }
+  }
+  .form-group {
+    margin-bottom: 2rem;
+    @include pad {
+      margin-bottom: 1.5rem;
+    }
+    @include mobile {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+.location__inner .locationCard {
+  width: calc((100% - 90px) / 3);
+  margin-bottom: 2rem;
+  margin-right: 1.85rem;
+  @include pad {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 1.25rem;
+    margin-right: 0;
+  }
+  @include mobile {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.location__link {
+  color: getColor('light');
+  background-color: getColor('dark');
+  text-align: center;
+  padding: 1.25rem 0;
+  font-size: 19px;
+  transition: all .3s;
+  &:hover {
+    background-color: getColor('primary');
+  }
+  @include pad {
+    font-size: 0.875rem;
+    padding: 1rem 0;
+  }
+}

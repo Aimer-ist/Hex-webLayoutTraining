@@ -1,0 +1,15 @@
+.locationDetail__inner .locationCard {
+  max-width: 445px;
+  @include pad {
+    max-width: 100%;
+    &__img, &__body {
+      width: calc((100% - 30px) / 2);
+      @include mobile {
+        width: 100%;
+      }
+    }
+    &__img {
+      height: 164px;
+    }
+  }
+}

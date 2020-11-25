@@ -39,3 +39,39 @@
     }
   }
 }
+
+.locationCard {
+  &__body {
+    border: 1px solid #00000020;
+  }
+  &__title {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #00000020;
+    @include pad {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  &__info {
+    padding: 1rem 1.5rem;
+    @include pad {
+      padding: 1rem;
+    }
+  }
+  &__item {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    display: flex;
+    @include pad {
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+    }
+  }
+  &__icon {
+    margin-right: 0.75rem;
+    @include pad {
+      margin-right: 1rem;
+    }
+  }
+}
