@@ -5,13 +5,18 @@
 .w-100 {
   width: 100%;
 }
+.h-100 {
+  height: 100%;
+}
 .text-center {
   text-align: center;
 }
 .d-none {
   display: none;
 }
-
+.d-block {
+  display: block;
+}
 @include pad {
   .d-md-block {
     display: block;
@@ -19,6 +24,12 @@
 }
 
 @include mobile {
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-inline-block {
+    display: inline-block;
+  }
   .w-sm-100 {
     width: 100%;
   }

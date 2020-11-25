@@ -1,0 +1,38 @@
+.form-group {
+  width: 100%;
+  margin-bottom: 1rem;
+  @include pad {
+    margin-bottom: 0.5rem;
+  }
+}
+label {
+  font-size: 1rem;
+  display: block;
+}
+input,textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  transition: all .3s;
+  &:focus {
+    outline-color: getColor('secondary');
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-right: 0.25rem;
+}
+input[type="submit"] {
+  display: block;
+  width: calc(100% / 2);
+  font-weight: 700;
+  color: getColor('light');
+  background-color: getColor('secondary');
+  border: none;
+  margin: 0 auto;
+  padding: 1rem 0;
+  &:hover, &:focus {
+    background-color: getColor('primary');
+  }
+}

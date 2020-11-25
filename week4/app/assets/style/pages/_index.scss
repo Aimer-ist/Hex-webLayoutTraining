@@ -1,0 +1,179 @@
+.homeBanner {
+  height: 840px;
+  background: url('./../images/banner.png') no-repeat center;
+  background-size: cover;
+  @include pad {
+    background-position: 43% center;
+  }
+  @include mobile {
+    background: url('./../images/banner-sm.png') no-repeat center;
+    background-size: cover;
+    height: 394px;
+  }
+}
+
+.section {
+  &__wrap {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    @include pad {
+      padding: 2.5rem 0;
+    }
+    @include mobile {
+      padding: 2rem 0;
+    }
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    @include pad {
+      font-size: 32px;
+      margin-bottom: 2rem;
+    }
+    @include mobile {
+      font-size: 24px;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.service {
+  &__item {
+    width: 20%;
+    @include pad {
+      width: 40%;
+    }
+    @include mobile {
+      width: 80%;
+    }
+  }
+  &__img {
+    width: 100px;
+    vertical-align: initial;
+  }
+}
+
+.series {
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    @include pad {
+      margin-bottom: 0.5rem;
+    }
+    @include mobile {
+      justify-content: center;
+    }
+  }
+  &__img {
+    width: 58%;
+    @include mobile {
+      position: relative;
+      width: 100%;
+    }
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    @include pad {
+      font-size: 1.75rem;
+    }
+    @include mobile {
+      position: absolute;
+      a {
+        color: getColor('light');
+      }
+    }
+  }
+  &__icon {
+    width: 48px;
+    height: 48px;
+    fill: green;
+    @include pad {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.design {
+  background: url('./../images/bg.png') center;
+  &__item {
+    position: relative;
+    width: calc((100% - 30px) / 2);
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &__img {
+    &::before {
+      content:'';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      transition: all 0.3s;
+    }
+    &:hover {
+      &::before {
+        background-color: rgba(255, 255, 255, 0);
+      }
+    }
+  }
+  &__title {
+    position: absolute;
+    font-size: 4.5rem;
+    font-weight: 700;
+    @include pad {
+      font-size: 2rem;
+    }
+  }
+}
+
+.recommend {
+  &__item {
+    width: calc((100% - 90px) / 4);
+    @include pad {
+      width: calc((100% - 30px) / 2);
+      margin-bottom: 28px;
+    }
+    @include mobile {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  &__content {
+    border: 1px solid getColor('dark-300');
+    padding: 1rem;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.contact {
+  &__container {
+    max-width: 730px;
+    margin: 0 auto;
+    @include pad {
+      max-width: 450px;
+    }
+    @include mobile {
+      max-width: 345px;
+    }
+  }
+  .checkbox {
+    margin-bottom: 2.625rem;
+    @include pad {
+      margin-bottom: 1.25rem;
+    }
+    @include mobile {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
