@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
+  <title>眼鏡電商</title>
   <link rel="shortcut icon" href="./assets/images/Hexgon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -23,15 +23,15 @@
     <nav class="header__menu w-sm-100">
       <ul class="header__list d-flex flex-sm-wrap">
         <li class="header__item w-sm-50"><a class="font-h6 text-center py-5 px-4 py-sm-1 px-md-2"href="./productOptical.html">系列鏡框</a></li>
-        <li class="header__item w-sm-50"><a class="font-h6 text-center py-5 px-4 py-sm-1 px-md-2"href="#">門市據點</a></li>
-        <li class="header__item w-sm-50"><a class="font-h6 text-center py-5 px-4 py-sm-1 px-md-2"href="#">&ensp;部落格&ensp;</a></li>
-        <li class="header__item w-sm-50"><a class="font-h6 text-center py-5 px-4 py-sm-1 px-md-2"href="#">常見問題</a></li>
+        <li class="header__item w-sm-50"><a class="font-h6 text-center py-5 px-4 py-sm-1 px-md-2"href="./location.html">門市據點</a></li>
+        <li class="header__item w-sm-50"><a class="font-h6 text-center py-5 px-4 py-sm-1 px-md-2"href="./blog.html">&ensp;部落格&ensp;</a></li>
+        <li class="header__item w-sm-50"><a class="font-h6 text-center py-5 px-4 py-sm-1 px-md-2"href="./FQA.html">常見問題</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-  <div class="banner">
+  <div class="homeBanner">
     <div class="container h-100 d-flex align-item-center justify-content-end">
       <h1 class="text-primary font-h1 font-h3-md font-h4-sm font-bold">
         <span class="d-block font-h4 font-h6-md font-p-sm font-regular text-right">
@@ -68,40 +68,44 @@
       </ul>
     </div>
   </section>
-  <!-- <section class="series bg-secondaryLight py-8">
+  <section class="series bg-secondaryLight section__wrap">
     <div class="container">
       <h2 class="font-h2 font-h4-md font-h5-sm text-primary font-bold text-center mb-7 mb-md-4 mb-sm-2">
         用專業的心，做專業的事</h2>
       <ul class="series__list">
         <li class="series__item">
-          <a href="#">
-            <img src="" alt=""></a>
-          <a href="#">
-            <h3>
-              <img src="./assets/images/icon-diamond-black.svg" alt="icon-diamond">
-            </h3>
-          </a>
+          <img class="series__img mr-4 mr-sm-0" src="./assets/images/product-1.png" alt="optical">
+          <h3 class="series__title">
+            <a class="text-secondary" href="#">
+              <img class="series__icon d-sm-none" src="./assets/images/icon-diamond.svg" alt="icon-diamond">
+              <img class="series__icon d-none d-sm-inline-block" src="./assets/images/icon-diamond-white.svg" alt="icon-diamond">
+              optical
+            </a>
+          </h3>
+        </li>
+        <li class="series__item flex-row-reverse flex-md-row">
+          <img class="series__img ml-4 ml-md-0 mr-md-4 mr-sm-0" src="./assets/images/product-2.png" alt="sunglasses">
+          <h3 class="series__title">
+            <a class="text-secondary" href="#">
+              <img class="series__icon d-sm-none" src="./assets/images/icon-sun.svg" alt="icon-sun">
+              <img class="series__icon d-none d-sm-inline-block" src="./assets/images/icon-sun-white.svg" alt="icon-sun">
+              sunglasses
+            </a>
+          </h3>
         </li>
         <li class="series__item">
-          <a href="#">
-            <img src="" alt=""></a>
-          <a href="#">
-            <h3>
-              <img src="./assets/images/icon-sun-black.svg" alt="icon-sun">
-            </h3>
-          </a>
-        </li>
-        <li class="series__item">
-          <a href="#">
-            <img src="" alt=""></a>
-          <a href="#">
-            <h3><img src="./assets/images/icon-thunder-black.svg" alt="icon-thunder">
-            </h3>
-          </a>
+          <img class="series__img mr-4 mr-sm-0" src="./assets/images/product-3.png" alt="functional">
+          <h3 class="series__title">
+            <a class="text-secondary" href="#">
+              <img class="series__icon d-sm-none" src="./assets/images/icon-thunder.svg" alt="icon-thunder">
+              <img class="series__icon d-none d-sm-inline-block" src="./assets/images/icon-thunder-white.svg" alt="icon-thunder">
+              functional
+            </a>
+          </h3>
         </li>
       </ul>
     </div>
-  </section> -->
+  </section>
   <section class="design">
     <div class="container section__wrap">
       <h2 class="section__title text-light">聯名設計鏡框</h2>
@@ -193,12 +197,12 @@
     <div class="container d-flex flex-wrap justify-content-between">
       <div class="footer__header">
         <nav>
-          <ul class="footer__menu d-flex mb-md-3">
+          <ul class="footer__menu d-flex mb-md-3 d-sm-none">
             <li><a class="mr-5 py-2 py-md-0" href="./index.html">首頁</a></li>
             <li><a class="mr-5 py-2 py-md-0" href="./productOptical.html">系列鏡框</a></li>
-            <li><a class="mr-5 py-2 py-md-0" href="#">門市據點</a></li>
-            <li><a class="mr-5 py-2 py-md-0" href="#">部落格</a></li>
-            <li><a class="mr-5 py-2 py-md-0" href="#">常見問題</a></li>
+            <li><a class="mr-5 py-2 py-md-0" href="./location.html">門市據點</a></li>
+            <li><a class="mr-5 py-2 py-md-0" href="./blog.html">部落格</a></li>
+            <li><a class="mr-5 py-2 py-md-0" href="./FQA.html">常見問題</a></li>
           </ul>
         </nav>
         <ul class="footer__contact mb-2">
@@ -222,7 +226,7 @@
             <i class="fab fa-line"></i></a></li>
       </ul>
       <div class="footer__others w-100 d-flex align-item-center pt-3 pt-sm-2 flex-sm-column align-item-sm-start">
-        <a class="footer__logo mr-5" href="./index.html">
+        <a class="footer__logo mr-5 mr-sm-0 d-md-none" href="./index.html">
           <img src="./assets/images/logo.png" alt="logo"></a>
         <p class="footer__copyrught text-light mr-auto mb-sm-1">Copyright © 2020 Glasses.All rights reserved.</p>
         <ul class="footer__policy d-flex flex-sm-column">
