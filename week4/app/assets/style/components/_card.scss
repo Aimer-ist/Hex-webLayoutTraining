@@ -75,3 +75,71 @@
     }
   }
 }
+
+.blogCard {
+  &__item {
+    position: relative;
+    display: flex;
+    margin-bottom: 3.75rem;
+    @include pad {
+      margin-bottom: 2rem;
+    }
+    @include mobile {
+      flex-direction: column;
+      margin-bottom: 1.625rem;
+    }
+  }
+  &__img {
+    margin-right: 1.875rem;
+    @include pad {
+      width: calc((100% - 30px) /2);
+    }
+    @include mobile {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    &:hover {
+      font-weight: 700;
+      color: getColor('secondary');
+    }
+    @include pad {
+      font-size: 1.25rem;
+    }
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+  &__date {
+    color: #000000B3;
+    @include pad {
+      font-size: 0.875rem;
+    }
+  }
+  &__minLink {
+    @include pad {
+      color: getColor('dark-600');
+      font-weight: bold;
+      display: inline-block;
+      &:hover {
+        color: getColor('secondary');
+      }
+    }
+  }
+  &__link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: getColor('primary');
+    &:hover {
+      color: getColor('secondary');
+    }
+    @include pad {
+      display: none;
+    }
+  }
+}

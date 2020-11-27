@@ -30,6 +30,22 @@
   .bg-#{$key} {
     background-color: $val;
   }
+  @include pad {
+    .text-md-#{$key} {
+      color: $val;
+    }
+    .bg-md-#{$key} {
+      background-color: $val;
+    }
+  }
+  @include mobile {
+    .text-sm-#{$key} {
+      color: $val;
+    }
+    .bg-sm-#{$key} {
+      background-color: $val;
+    }
+  }
 };
 
 .text-uppercase {

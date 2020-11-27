@@ -21,11 +21,17 @@
   .d-md-block {
     display: block;
   }
+  .d-md-none {
+    display: none;
+  }
 }
 
 @include mobile {
   .d-sm-none {
     display: none;
+  }
+  .d-sm-block {
+    display: block;
   }
   .d-sm-inline-block {
     display: inline-block;
