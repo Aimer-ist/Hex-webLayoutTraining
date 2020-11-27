@@ -16,13 +16,15 @@ header a, footer a{
       height: 29px;
     }
   }
-  &__menu a {
-    transition: all 0.3s;
-    &:hover {
-      background-color: getColor('primary');
-    }
-    @include mobile {
-      border: 1px solid getColor('light');
+  &__menu {
+    a {
+      transition: all 0.3s;
+      &:hover {
+        background-color: getColor('primary');
+      }
+      @include mobile {
+        border: 1px solid getColor('light');
+      }
     }
   }
 }
@@ -36,16 +38,15 @@ footer a {
 }
 .footer {
   &__others {
+    position: relative;
     border-top: 1px solid getColor('light');
   }
-  @include pad {
-    &__logo {
-      display: none;
-    }
-  }
-  @include mobile {
-    &__menu {
-      display: none;
+  &__logo {
+    @include mobile {
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
   }
 }

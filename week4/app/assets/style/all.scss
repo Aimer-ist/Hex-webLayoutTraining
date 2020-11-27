@@ -4,16 +4,22 @@
 
 @import'base';
 
-@import'utility';
-@import'layout';
+@import'./utility/area';
+@import'./utility/flex';
+@import'./utility/space';
+@import'./utility/text';
+
 @import'./components/form';
 @import'./components/pagination';
 @import'./components/card';
 @import'./components/banner';
 
+@import'./pages/layout';
 @import'./pages/index';
 @import'./pages/productOptical';
 @import'./pages/productSunglasses';
 @import'./pages/fqa';
 @import'./pages/location';
 @import'./pages/locationDetail';
+@import'./pages/blog';
+@import'./pages/blogDetail';
