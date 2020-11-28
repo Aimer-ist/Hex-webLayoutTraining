@@ -1,4 +1,9 @@
 .productCard {
+  &:hover {
+    @include animationBase(jump, 0.8s);
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  }
   &__img {
     width: 100%;
     height: 164px;

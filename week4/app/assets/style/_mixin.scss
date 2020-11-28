@@ -14,3 +14,8 @@
   $color: map-get($colors, $colorName);
   @return $color;
 }
+
+@mixin animationBase($name, $duration) {
+  animation-name: $name;
+  animation-duration: $duration;
+}
