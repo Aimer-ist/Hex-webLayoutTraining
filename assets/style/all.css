@@ -2042,6 +2042,48 @@ h1, h2, h3, h4, h5, h6 {
 .text-left {
   text-align: left; }
 
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes jump {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes fadeDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -150px, 0);
+            transform: translate3d(0, -150px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); } }
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -150px, 0);
+            transform: translate3d(0, -150px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); } }
+
 .form-group {
   width: 100%;
   margin-bottom: 1rem; }
@@ -2131,6 +2173,16 @@ select {
     .pagination__link:hover {
       color: #FFFFFF;
       background-color: #707070; }
+
+.productCard:hover {
+  -webkit-animation-name: jump;
+          animation-name: jump;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
 
 .productCard__img {
   width: 100%;
@@ -2282,7 +2334,15 @@ select {
       height: 143px; } }
   .banner__title {
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    -webkit-animation-name: fadeDown;
+            animation-name: fadeDown;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
   .banner__icon {
     display: block; }
     @media (max-width: 767px) {
