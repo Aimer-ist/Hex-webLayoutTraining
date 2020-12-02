@@ -1,0 +1,12 @@
+// 表格
+.table .thead tr {
+  border-top: none;
+}
+
+// 分頁
+.pagination .page-link {
+  &.page__prev, &.page__next {
+    color:var(--primary);
+    padding: 0.35rem 0.3rem;
+  }
+}

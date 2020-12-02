@@ -1,0 +1,24 @@
+body,html {
+  color: var(--dark);
+}
+
+h1,h2,h3,h4,h5,h6,p, ul, dl {
+  margin-bottom: 0;
+}
+
+a {
+  display: block;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+i {
+  vertical-align: middle;
+}
+
+code {
+  font-family: $font-family-RobotoMon;
+  background: var(--primary-100);
+  padding: 0 0.25rem;
+}

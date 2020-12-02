@@ -1,0 +1,37 @@
+.sidebar {
+  min-width: 296px;
+  height: 100vh;
+}
+
+.logo a {
+  display: block;
+  background: url('../images/logo-ANSWER.svg') no-repeat;
+  height: 40px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu {
+  &__item a{
+    color: var(--bark);
+    margin-bottom: 22px;
+    transition: all .3s;
+    &:hover {
+      background: var(--primary-300);
+    }
+    &.active {
+      color: var(--primary);
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 4px;
+        background: var(--primary);
+      }
+    }
+  }
+}

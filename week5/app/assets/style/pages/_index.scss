@@ -1,0 +1,11 @@
+.chapter__item {
+  &.active, &:hover {
+    background: var(--primary-100);
+  }
+}
+
+.replyMessage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

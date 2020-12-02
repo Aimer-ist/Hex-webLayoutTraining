@@ -1,0 +1,43 @@
+// font-sizes
+@each $key, $val in $font-sizes {
+  .text-#{$key} {
+    font-size: $val;
+  }
+}
+
+.lh-1{
+  line-height: 1;
+}
+
+
+// 連結 相關
+a, button{
+  transition: all .3s;
+  &:hover {
+    &.hover-primary {
+      color: var(--primary) !important;
+    }
+    &.hover-danger {
+      color: var(--danger) !important;
+    }
+  }
+}
+
+a.eventBtn[aria-expanded="true"] {
+  i {
+    transform: rotate(180deg);
+  }
+}
+
+// img 相關
+.headshot {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.userPhoto {
+  height: 141px;
+  width: 141px;
+  object-fit: cover;
+}

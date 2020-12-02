@@ -7,15 +7,82 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <div class="container-fluid">
-    <sidebar></sidebar>
-    <main></main>
+  <div class="container-fluid px-0 d-flex">
+    <sidebar class="sidebar d-flex flex-column bg-light py-8 sidebar">
+      <h1 class="logo mb-8 mx-8"><a href="#">ANSWER</a></h1>
+      <nav class="menu">
+        <ul class="font-weight-bold list-unstyled">
+          <li class="menu__item">
+            <a href="#" class="py-1 pl-8">
+              <i class="material-icons mr-4">insert_chart</i>Dashboard</a></li>
+          <li class="menu__item">
+            <a href="#" class="py-1 pl-8">
+              <i class="material-icons mr-4">forum</i>Question</a></li>
+          <% if (title === "Assignment") { %>
+            <li class="menu__item">
+              <a href="./assignment.html" class="py-1 pl-8 active">
+                <i class="material-icons mr-4">assignment</i>Assignment</a></li>
+          <% } else { %>
+            <li class="menu__item">
+              <a href="./assignment.html" class="py-1 pl-8">
+                <i class="material-icons mr-4">assignment</i>Assignment</a></li>
+          <% } %>
+          <li class="menu__item">
+            <a href="#" class="py-1 pl-8"><i class="material-icons mr-4">video_library</i>Course</a></li>
+          <% if (title === "Admin") { %>
+            <li class="menu__item">
+              <a href="./admin.html" class="py-1 pl-8 active">
+                <i class="material-icons mr-4">supervisor_account</i>Admin</a></li>
+          <% } else { %>
+            <li class="menu__item">
+              <a href="./admin.html" class="py-1 pl-8">
+                <i class="material-icons mr-4">supervisor_account</i>Admin</a></li>
+          <% } %>
+          <li class="menu__item">
+            <a href="#" class="py-1 pl-8">
+              <i class="material-icons mr-4">settings</i>Settings</a></li>
+        </ul>
+      </nav>
+      <div class="user mt-auto d-flex mx-8">
+        <img class="headshot mr-4" src="./assets/images/andychen.jpeg" alt="headshot">
+        <div class="user__info">
+          <p class="font-weight-bold">Andy Chen</p>
+          <p class="text-sm text-gray lh-1">andy0401@mail.com</p>
+        </div>
+      </div>
+    </sidebar>
+    <div class="p-8 w-100">
+      <header class="d-flex align-items-center mb-8">
+        <h2 class="text-xl font-weight-bold mr-8"><%- title %></h1>
+        <% if (title === "Assignment") { %>
+          <div class="dropdown ml-4 mr-auto">
+            <a class="text-dark font-weight-bold eventBtn" type="button" id="coursesMenu"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              All Courses<i class="text-primary material-icons ml-1 mr-auto">keyboard_arrow_down</i></a>
+            <div class="dropdown-menu" aria-labelledby="coursesMenu">
+              <a class="dropdown-item" href="#">Courses 1</a>
+              <a class="dropdown-item" href="#">Courses 2</a>
+              <a class="dropdown-item" href="#">Courses 3</a>
+            </div>
+          </div>
+        <% } else { %>
+          <a class="font-weight-bold mr-auto" href="#"
+              data-toggle="modal" data-target="#addNewAdmin">
+            <i class="text-primary material-icons mr-1">add</i>Add New Admin</a>
+        <% } %>
+        <a class="mr-6" href="#">
+          <i class="material-icons">search</i></a>
+        <a class="hover-danger" href="#">
+          <i class="material-icons">notifications_active</i></a>
+      </header>
+      <%- contents %>
+    </div>
   </div>
-  <%- contents %>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
