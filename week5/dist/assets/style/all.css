@@ -13418,9 +13418,13 @@ a.eventBtn[aria-expanded="true"] i {
      object-fit: cover;
 }
 
+.list-style--disc {
+  list-style-type: disc;
+}
+
 .sidebar {
   min-width: 296px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .logo a {

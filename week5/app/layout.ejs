@@ -23,7 +23,7 @@
           <li class="menu__item">
             <a href="#" class="py-1 pl-8">
               <i class="material-icons mr-4">forum</i>Question</a></li>
-          <% if (title === "Assignment") { %>
+          <% if (current === "Assignment") { %>
             <li class="menu__item">
               <a href="./assignment.html" class="py-1 pl-8 active">
                 <i class="material-icons mr-4">assignment</i>Assignment</a></li>
@@ -34,7 +34,7 @@
           <% } %>
           <li class="menu__item">
             <a href="#" class="py-1 pl-8"><i class="material-icons mr-4">video_library</i>Course</a></li>
-          <% if (title === "Admin") { %>
+          <% if (current === "Admin") { %>
             <li class="menu__item">
               <a href="./admin.html" class="py-1 pl-8 active">
                 <i class="material-icons mr-4">supervisor_account</i>Admin</a></li>
@@ -51,15 +51,15 @@
       <div class="user mt-auto d-flex mx-8">
         <img class="headshot mr-4" src="./assets/images/andychen.jpeg" alt="headshot">
         <div class="user__info">
-          <p class="font-weight-bold">Andy Chen</p>
-          <p class="text-sm text-gray lh-1">andy0401@mail.com</p>
+          <title class="font-weight-bold d-block">Andy Chen</title>
+          <a class="text-sm text-gray lh-1" href="mailto:andy0401@mail.com">andy0401@mail.com</a>
         </div>
       </div>
     </sidebar>
     <div class="p-8 w-100">
       <header class="d-flex align-items-center mb-8">
         <h2 class="text-xl font-weight-bold mr-8"><%- title %></h1>
-        <% if (title === "Assignment") { %>
+        <% if (current === "Assignment") { %>
           <div class="dropdown ml-4 mr-auto">
             <a class="text-dark font-weight-bold eventBtn" type="button" id="coursesMenu"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -1,8 +1,8 @@
 ---
-title: Admin
+title: ANSWER|Admin
 layout: ./app/layout.ejs
 engine: ejs
-current: index
+current: Admin
 ---
 
 <main class="mt-4 admin">
@@ -167,7 +167,7 @@ current: index
   <div class="modal-dialog  modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header border-0"> 
-        <h5 class="modal-title text-xl font-weight-bold" id="addNewAdminTitle">New Admin</h5>
+        <h3 class="modal-title text-xl font-weight-bold" id="addNewAdminTitle">New Admin</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -177,12 +177,12 @@ current: index
           <div class="pb-4 mb-4 border-bottom">
             <p class="text-lg font-weight-bold mb-4">Account</p>
             <div class="form-group">
-              <label class="text-sm" for="name">Name</label>
-              <input type="text" class="form-control rounded-sm" id="name" placeholder="Emir Wicks">
+              <label class="text-sm" for="name_addNew">Name</label>
+              <input type="text" class="form-control rounded-sm" id="name_addNew" placeholder="Emir Wicks">
             </div>
             <div class="form-group ">
-              <label class="text-sm" for="email">Email</label>
-              <input type="email" class="form-control rounded-sm" id="email" placeholder="emir.wicks@mail.com">
+              <label class="text-sm" for="email_addNew">Email</label>
+              <input type="email" class="form-control rounded-sm" id="email_addNew" placeholder="emir.wicks@mail.com">
             </div>
           </div>
           <div class="pb-4 mb-4 border-bottom">
@@ -193,34 +193,34 @@ current: index
           </div>
           <div class="pb-4 mb-4 border-bottom">
             <p class="text-lg font-weight-bold mb-4">Access Level</p>
-            <select class="form-control border-dark" id="gender">
+            <select class="form-control border-dark" id="accessLevel_addNew">
               <option  selected disabled>-Choose access level-</option>
-              <option>Level 1</option>
-              <option>Level 2</option>
+              <option value="Level 1">Level 1</option>
+              <option value="Level 2">Level 2</option>
             </select> 
           </div>
           <div class="mb-8">
             <p class="text-lg font-weight-bold mb-4">Custom Access</p>
             <div class="form-group">
               <div class="custom-control custom-checkbox mb-3">
-                <input class="form-check-input" type="checkbox" name="customAccess" value="lecture" id="Check1">
-                <label class="form-check-label" for="Check1">lecture</label>
+                <input class="form-check-input" type="checkbox" name="customAccess" value="lecture" id="check-lecture_addNew">
+                <label class="form-check-label" for="check-lecture_addNew">lecture</label>
               </div>
               <div class="custom-control custom-checkbox mb-3">
-                <input class="form-check-input" type="checkbox" name="customAccess" value="Coupon" id="Check2">
-                <label class="form-check-label" for="Check2">Coupon</label>
+                <input class="form-check-input" type="checkbox" name="customAccess" value="Coupon" id="check-coupon_addNew">
+                <label class="form-check-label" for="check-coupon_addNew">Coupon</label>
               </div>
               <div class="custom-control custom-checkbox mb-3">
-                <input class="form-check-input" type="checkbox" name="customAccess" value="Message" id="Check3">
-                <label class="form-check-label" for="Check3">Message</label>
+                <input class="form-check-input" type="checkbox" name="customAccess" value="Message" id="check-message_addNew">
+                <label class="form-check-label" for="check-message_addNew">Message</label>
               </div>
               <div class="custom-control custom-checkbox mb-3">
-                <input class="form-check-input" type="checkbox" name="customAccess" value="Setting" id="Check4">
-                <label class="form-check-label" for="Check4">Setting</label>
+                <input class="form-check-input" type="checkbox" name="customAccess" value="Setting" id="check-setting_addNew">
+                <label class="form-check-label" for="check-setting_addNew">Setting</label>
               </div>
               <div class="custom-control custom-checkbox">
-                <input class="form-check-input" type="checkbox" name="customAccess" value="task menu" id="Check5">
-                <label class="form-check-label" for="Check5">task menu</label>
+                <input class="form-check-input" type="checkbox" name="customAccess" value="task menu" id="check-taskMenu_addNew">
+                <label class="form-check-label" for="check-taskMenu_addNew">task menu</label>
               </div>
             </div>
           </div>
@@ -239,7 +239,7 @@ current: index
   <div class="modal-dialog  modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header border-0"> 
-        <h5 class="modal-title text-xl font-weight-bold" id="editAdminTitle">Edit Admin</h5>
+        <h3 class="modal-title text-xl font-weight-bold" id="editAdminTitle">Edit Admin</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -249,21 +249,21 @@ current: index
           <div class="pb-4 mb-4 border-bottom">
             <p class="text-lg font-weight-bold mb-4">Account</p>
             <div class="form-group">
-              <label class="text-sm" for="name">Name</label>
+              <label class="text-sm" for="name_edit">Name</label>
               <input type="text" value="Emir Wicks"
-                class="form-control bg-light rounded-sm border-0" id="name" placeholder="Emir Wicks">
+                class="form-control bg-light rounded-sm border-0" id="name_edit" placeholder="Emir Wicks">
             </div>
             <div class="form-group ">
-              <label class="text-sm" for="email">Email</label>
+              <label class="text-sm" for="email_edit">Email</label>
               <input type="email" value="emir.wicks@mail.com"
-                class="form-control bg-light rounded-sm border-0" id="email" placeholder="emir.wicks@mail.com">
+                class="form-control bg-light rounded-sm border-0" id="email_edit" placeholder="emir.wicks@mail.com">
             </div>
           </div>
           <div class="pb-4 mb-4 border-bottom">
             <p class="text-lg font-weight-bold mb-4">Verification</p>
             <div class="d-flex justify-content-between">
               <p class="mb-4">
-                <i class="material-icons mr-2 text-primary align-top">check_circle</i>Verified
+                <i class="material-icons mr-2 text-primary align-top">check-circle</i>Verified
               </p>
               <span class="text-sm ml-auto">2020/4/12</span>
             </div>
@@ -271,33 +271,33 @@ current: index
           </div>
           <div class="pb-4 mb-4 border-bottom">
             <p class="text-lg font-weight-bold mb-4">Access Level</p>
-            <select class="form-control border-dark" id="gender">
-              <option>Admin</option>
-              <option>Custom</option>
+            <select class="form-control border-dark" id="accessLevel_edit">
+              <option value="Admin">Admin</option>
+              <option value="Custom">Custom</option>
             </select> 
           </div>
           <div class="pb-4 mb-4 border-bottom">
             <p class="text-lg font-weight-bold mb-4">Custom Access</p>
             <div class="form-group">
               <div class="custom-control custom-checkbox mb-3">
-                <input class="form-check-input" type="checkbox" name="customAccess" value="lecture" id="Check1">
-                <label class="form-check-label" for="Check1">lecture</label>
+                <input class="form-check-input" type="checkbox" name="customAccess" value="lecture" id="check-lecture_edit">
+                <label class="form-check-label" for="check-lecture_edit">lecture</label>
               </div>
               <div class="custom-control custom-checkbox mb-3">
-                <input class="form-check-input" type="checkbox" name="customAccess" value="Coupon" id="Check2">
-                <label class="form-check-label" for="Check2">Coupon</label>
+                <input class="form-check-input" type="checkbox" name="customAccess" value="Coupon" id="check-coupon_edit">
+                <label class="form-check-label" for="check-coupon_edit">Coupon</label>
               </div>
               <div class="custom-control custom-checkbox mb-3">
-                <input class="form-check-input" type="checkbox" name="customAccess" value="Message" id="Check3">
-                <label class="form-check-label" for="Check3">Message</label>
+                <input class="form-check-input" type="checkbox" name="customAccess" value="Message" id="check-message_edit">
+                <label class="form-check-label" for="check-message_edit">Message</label>
               </div>
               <div class="custom-control custom-checkbox mb-3">
-                <input class="form-check-input" type="checkbox" name="customAccess" value="Setting" id="Check4">
-                <label class="form-check-label" for="Check4">Setting</label>
+                <input class="form-check-input" type="checkbox" name="customAccess" value="Setting" id="check-setting_edit">
+                <label class="form-check-label" for="check-setting_edit">Setting</label>
               </div>
               <div class="custom-control custom-checkbox">
-                <input class="form-check-input" type="checkbox" name="customAccess" value="task menu" id="Check5">
-                <label class="form-check-label" for="Check5">task menu</label>
+                <input class="form-check-input" type="checkbox" name="customAccess" value="task menu" id="check-taskMenu_edit">
+                <label class="form-check-label" for="check-taskMenu_edit">task menu</label>
               </div>
             </div>
           </div>
@@ -331,7 +331,7 @@ current: index
             </button>
           </div>
           <p class="lh-1">Admin</p>
-          <h5 class="modal-title mb-2 text-xl font-weight-bold lh-1" id="userViewTitle">Emir Wicks</h5>
+          <h3 class="modal-title mb-2 text-xl font-weight-bold lh-1" id="userViewTitle">Emir Wicks</h3>
           <p class="text-gray mb-3">emir.wicks@mail.com</p>
           <div class="d-flex justify-content-between">
             <p class="bg-light text-sm px-2 py-1 rounded">verified</p>
