@@ -1,0 +1,10 @@
+.hover-link--primaryLight {
+  &:hover {
+    box-shadow:inset 0 -15px 0px $primary-light;
+  }
+}
+.hover-bg--primaryLight {
+  &:hover {
+    background-color: $primary-light;
+  }
+}

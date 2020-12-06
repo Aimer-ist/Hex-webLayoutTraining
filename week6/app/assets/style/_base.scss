@@ -1,0 +1,35 @@
+
+
+.h1,.h2,.h3,.h4,.h5,.h6 {
+  font-weight: normal;
+}
+
+p, ol, ul, dl {
+  margin-bottom: 0;
+}
+
+button {
+  transition:all 0.5s;
+}
+
+a{
+  display: block;
+  transition:all 0.5s;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+// icon
+.material-icons {
+  vertical-align: bottom;
+}
+
+.grid-wrap {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include media-breakpoint-up(md) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}

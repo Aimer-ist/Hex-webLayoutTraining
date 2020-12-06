@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-md navbar-light bg-white p-0">
+  <div class="container-fluid container-md">
+    <h1 class="ml-5 ml-md-0 py-1">
+      <a class="navbar-brand"href="./index.html">D'Perfume</a>
+    </h1>
+    <a class="ml-auto mr-8 text-info position-relative d-md-none" href="#"><span class="material-icons">shopping_cart</span><span class="badge badge-primary rounded-circle">3</span></a>
+    <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="headerMenu">
+      <ul class="navbar-nav ml-md-auto px-0">
+        <li class="nav-item active text-center order-0">
+          <a class="nav-link py-4 px-0 mr-5" href="./product.html"><span class="material-icons mr-1 d-none d-md-inline">store</span> Product<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item text-center order-4 order-md-1">
+          <a class="nav-link py-4 px-0 mr-5" href="login.html"><span class="material-icons mr-1 d-none d-md-inline">person</span>log in</a>
+        </li>
+        <li class="nav-item text-center order-1">
+          <a class="nav-link py-4 px-0 mr-5" href="#"><span class="material-icons mr-1 d-none d-md-inline">favorite</span>Wishlist</a>
+        </li>
+        <li class="nav-item text-center d-none d-md-block order-5">
+          <a class="nav-link py-4 px-0 mr-5" href="#"><span class="material-icons mr-1">shopping_cart</span>Cart(3)</a>
+        </li>
+        <li class="nav-item d-block d-md-none text-center order-2">
+          <a class="nav-link py-4 mr-5" href="#">Blog</a>
+        </li>
+        <li class="nav-item d-block d-md-none text-center order-3">
+          <a class="nav-link py-4 mr-5" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<% if (title !== "D'Perfume|Index") { %>
+  <nav class="bg-primary d-none d-md-block ml-n6">
+    <ul class="container d-flex list-unstyled">
+      <li><a class="text-white h5 p-4 hover-bg--primaryLight ml-0" href="#">CHANEL</a></li>
+      <li><a class="text-white h5 p-4 hover-bg--primaryLight" href="#">Jo Malone</a></li>
+      <li><a class="text-white h5 p-4 hover-bg--primaryLight" href="#">Curology</a></li>
+      <li><a class="text-white h5 p-4 hover-bg--primaryLight" href="#">Dior</a></li>
+      <li><a class="text-white h5 p-4 hover-bg--primaryLight" href="#">Chloe</a></li>
+      <li><a class="text-white h5 p-4 hover-bg--primaryLight" href="#">ZARA</a></li>
+    </ul>
+  </nav>
+<% } else { } %>

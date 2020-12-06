@@ -1,0 +1,64 @@
+.navbar-brand {
+  background: url('../images/d’Perfume@2x.png') no-repeat;
+  background-size: cover;
+  height: 38px;
+  width: 128px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -7px;
+  font-size: 0.75rem;
+  font-weight: normal;
+  padding: 1px 3.8px;
+}
+.navbar-light .navbar-nav {
+  .nav-item {
+    background-color: $secondary-dark;
+    border-bottom: 1px solid $white;
+    &:hover, &:focus {
+      background: lighten($secondary-dark, 20%);
+    }
+    @include media-breakpoint-up(md) {
+      background-color: $white;
+      border: none;
+      &:hover, &:focus {
+        background-color: transparent;
+        color: $primary;
+      }
+    }
+    &.active {
+      background: darken($secondary-dark, 20%);
+      @include media-breakpoint-up(md) {
+        background-color: $white;
+      }
+    }
+  }
+  .nav-link {
+    color: $white;
+    font-size: $h5-font-size;
+    line-height: 1.2;
+    @include media-breakpoint-up(md) {
+      color: $navbar-light-color;
+      position: relative;
+      &::after{
+        transition:all 0.5s;
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 3px;
+        display: block;
+        background-color: lighten($primary-light, 40%);
+      }
+      &:hover {
+        color: $primary;
+        &::after{           
+          width: calc(100%);
+        }
+      }
+    }
+  }
+}

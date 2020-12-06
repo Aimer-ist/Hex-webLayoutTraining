@@ -1,0 +1,34 @@
+---
+title: D'Perfume | Login
+layout: ./app/layout.ejs
+engine: ejs
+current: login
+---
+
+<main class="container grid-wrap">
+  <div class="row align-items-center">
+    <div class="col-12 col-md-8">
+      <img class="img-fluid mb-7 mb-md-0" src="./assets/images/login1.jpg" alt="">
+    </div>
+    <div class="col-12 col-md-4 mb-15 mb-md-0">
+      <h2 class="mb-4 font-weight-bold">Log in</h2>
+      <form>
+        <div class="form-group">
+          <label for="email_login">帳號</label>
+          <input type="email" class="form-control" name="email" id="email_login" aria-describedby="emailHelp" placeholder="email@example.com">
+        </div>
+        <div class="form-group mb-9">
+          <label for="password_login">密碼</label>
+          <input type="password" class="form-control" name="password" id="password_login" aria-describedby="passwordlHelp" placeholder="Password">
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="#">忘記密碼</a>
+          <div class="d-flex">
+            <button class="btn btn-outline-primary mr-2">註冊</button>
+            <button type="sumbit" class="btn btn-primary">登入</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
