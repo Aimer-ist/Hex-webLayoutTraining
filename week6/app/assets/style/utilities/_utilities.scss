@@ -8,3 +8,8 @@
     background-color: $primary-light;
   }
 }
+
+.img-cover {
+  object-fit: cover;
+  object-position: center center;
+}

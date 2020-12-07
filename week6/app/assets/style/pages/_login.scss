@@ -1,0 +1,11 @@
+.login-img {
+  @include media-breakpoint-up(md) {
+    height: 450px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 600px;
+  }
+  @include media-breakpoint-up(xl) {
+    height: 730px;
+  }
+}
