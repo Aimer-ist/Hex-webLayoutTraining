@@ -1,0 +1,40 @@
+.card-img-sm {
+  height: 165px;
+  width: 100%;
+  @include media-breakpoint-up(md) { 
+    height: 200px;
+  }
+  @include media-breakpoint-up(md) {
+    height: 255px;
+  }
+}
+.card-link {
+  color: $black;
+  &:hover {
+    color: $primary-light;
+  }
+}
+.card-hover--textMore {
+  position: relative;
+  transition: .3s all;
+  &:before {
+    content: 'More ...';
+    position: absolute;
+    color: $primary-light;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .3s;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  &:hover:before,
+  &:hover:after {
+    opacity: 1;
+  }
+  &:hover:before {
+    top: 55%;
+  }
+}

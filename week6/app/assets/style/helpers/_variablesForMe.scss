@@ -8,7 +8,8 @@ $warning: #A5A5A5;
 $dark: #212529;
 $gary:#848484;
 $light:#E0E0E0;
-$white:    #fff ;
+$white:#fff;
+$black:#000;
 
 $theme-colors: (
   'gary': $gary,
@@ -67,7 +68,8 @@ $spacers: (
 );
 
 $headings-margin-bottom: 0;
-
+$headings-line-height:1.5;
+$paragraph-margin-bottom: 0;
 
 $link-color: $primary-light;
 $border-color:#CED4DA;
@@ -85,13 +87,26 @@ $btn-padding-x-lg:   24px;
 $label-margin-bottom: 0.25rem;
 
 /* input */
-$input-color: $dark ; //#495057 
+$input-color:#495057;
 $input-border-color: $border-color;
 $input-placeholder-color: $info;
 $form-group-margin-bottom: 1.25rem; // 20px
 $input-height-lg: 60px;
 $input-font-size-lg: 1rem;
-
+$input-padding-y: 0.75rem;
 $input-group-addon-color: $white;
 $input-group-addon-bg: $primary;
 $input-group-addon-border-color: $primary;
+
+// card
+$card-spacer-y: 0;
+$card-spacer-x: 0;
+$card-border-width: 0;
+$card-inner-border-radius: 0;
+
+// page
+$pagination-border-width: 0;
+$pagination-color: $black;
+$pagination-active-color: $primary-light;
+$pagination-active-bg: transparent;
+$pagination-hover-bg: lighten($primary-light, 40%);

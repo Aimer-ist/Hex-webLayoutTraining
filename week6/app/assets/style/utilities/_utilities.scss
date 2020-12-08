@@ -9,7 +9,22 @@
   }
 }
 
-.img-cover {
+.hover-block--bulr {
+  filter: grayscale(0%) blur(0);
+  transition: .3s ease-in-out;
+  &:hover {
+    filter: grayscale(100%) blur(2px);
+  }
+}
+
+.img-cover{
   object-fit: cover;
   object-position: center center;
+}
+
+.position-md-absolute {
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    right: 0;
+  }
 }
