@@ -1,0 +1,7 @@
+.banner {
+  background-image: url('../images/index1.jpg');
+  height: 480px;
+  @include media-breakpoint-up(lg) {
+    height: 870px;
+  }
+}

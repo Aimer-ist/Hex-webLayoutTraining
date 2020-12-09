@@ -12,6 +12,8 @@ $white:#fff;
 $black:#000;
 
 $theme-colors: (
+  'black': $black,
+  'white': white,
   'gary': $gary,
   'primary-light': $primary-light,
   'secondary-dark':$secondary-dark,
@@ -79,7 +81,7 @@ $navbar-light-color: $secondary;
 // btn
 $btn-padding-x: 1rem;
 $btn-border-radius-lg: 0px;
-$btn-padding-y-lg:  16px;
+$btn-padding-y-lg:  0.75rem;
 $btn-padding-x-lg:   24px;
 
 
@@ -103,6 +105,7 @@ $card-spacer-y: 0;
 $card-spacer-x: 0;
 $card-border-width: 0;
 $card-inner-border-radius: 0;
+$card-bg: transparent;
 
 // page
 $pagination-border-width: 0;
