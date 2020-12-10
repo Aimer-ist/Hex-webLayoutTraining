@@ -3,10 +3,11 @@ title: D'Perfume | CHANEL N°5
 layout: ./app/layout.ejs
 engine: ejs
 current: productDetail
+userStatus: Log in
 ---
 
-<main class="container py-10 pt-md-20 pb-md-15">
-  <div class="row position-relative">
+<main class="container grid-wrap">
+  <div class="row position-relative" data-aos="fade-up">
     <div class="col-md-8 mb-7">
       <img class="img-cover w-100" src="./assets/images/product1.jpg" alt="CHANEL N°5">
     </div>
@@ -14,9 +15,9 @@ current: productDetail
       <h2 class="font-weight-bolder">CHANEL N°5</h2>
       <p class="h5 mb-8">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
       <p class="h5 mb-3">NT$4,980</p>
-      <form class="mb-2">
+      <form class="mb-2 needs-validation" novalidate>
         <div class="input-group">
-          <select name="quantity" id="quantity" class="custom-select border-primary">
+          <select name="quantity" id="quantity" class="custom-select border-primary" required>
             <option value="1" selected>1</option>
             <option value="2">2</option>
             <option value="3">3</option>

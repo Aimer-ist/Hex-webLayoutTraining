@@ -5,7 +5,7 @@
 }
 .hover-bg--primaryLight {
   &:hover {
-    background-color: $primary-light;
+    background: rgba($primary-light, 0.5);
   }
 }
 .hover-block--bulr {

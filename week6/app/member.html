@@ -2,20 +2,21 @@
 title: 會員中心 | D'Perfume
 layout: ./app/layout.ejs
 engine: ejs
-current:  member
+current: member
+userStatus: My page
 ---
 
-<main class="container py-10 pt-md-20 pb-md-15">
-  <div class="row">
+<main class="container grid-wrap">
+  <div class="row" data-aos="fade-up">
     <div class="col-md-3 col-lg-2 mb-10 list-unstyled">
       <h2 class="d-none d-md-block mb-7 h5 text-gary">會員中心</h2>
       <ul class="list-unstyled d-flex justify-content-between flex-md-column">
         <li class="active mb-0 mb-md-8">
-          <a href="#" class="text-gary border-bottom border-primary d-inline-flex">會員資料修改</a></li>
+          <a href="#" class="text-gary border-bottom border-primary d-inline py-1">會員資料修改</a></li>
         <li class=" mb-0 mb-md-8">
-          <a href="#" class="text-gary d-inline-flex">訂單查詢</a></li>
+          <a href="#" class="text-gary d-inline py-1 hover-bg--primaryLight">訂單查詢</a></li>
         <li class=" mb-0 mb-md-8">
-          <a href="#" class="text-gary d-inline-flex">退／換貨申請</a></li>
+          <a href="#" class="text-gary d-inline py-1 hover-bg--primaryLight">退／換貨申請</a></li>
       </ul>
     </div>
     <div class="col-lg-7 order-1 order-lg-0">
@@ -42,7 +43,7 @@ current:  member
         <div class="form-group row no-gutters">
           <label for="email" class="col-3 col-xl-2 col-form-label">電子信箱</label>
           <div class="col-9 col-xl-7">
-            <input type="text" class="form-control" id="email" placeholder="email@example.com">
+            <input type="email" class="form-control" id="email" placeholder="email@example.com">
           </div>
         </div>
         <div class="form-group row no-gutters">
@@ -135,26 +136,26 @@ current:  member
         </div>
       </form>
       <h4 class="h6 border-bottom border-info pb-2 mb-4">修改密碼</h4>
-      <form class="text-gary mb-12">
+      <form class="text-gary mb-0 mb-md-12 needs-validation" novalidate>
         <div class="form-group row no-gutters">
           <label for="old-password" class="col-3 col-xl-2 col-form-label">舊密碼</label>
           <div class="col-9 col-xl-7">
-            <input type="password" class="form-control" name="old-password" id="old-password">
+            <input type="password" class="form-control" name="old-password" id="old-password" required>
           </div>
         </div>
         <div class="form-group row no-gutters">
           <label for="new-password" class="col-3 col-xl-2 col-form-label">新密碼</label>
           <div class="col-9 col-xl-7">
-            <input type="password" class="form-control" name="new-password" id="new-password">
+            <input type="password" class="form-control" name="new-password" id="new-password" required>
           </div>
         </div>
         <div class="form-group row no-gutters">
           <label for="repeat-password" class="col-3 col-xl-2 col-form-label">確認密碼</label>
           <div class="col-9 col-xl-7">
-            <input type="password" class="form-control" name="repeat-password" id="repeat-password">
+            <input type="password" class="form-control" name="repeat-password" id="repeat-password" required>
           </div>
         </div>
-        <div class="form-group row no-gutters">
+        <div class="form-group row no-gutters mb-0">
           <div class="col-3 col-xl-2"></div>
           <div class="col-9 col-xl-9">
             <input type="submit" class="btn btn-primary w-50" value="變更密碼">
