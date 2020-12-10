@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D'Perfume | Login</title>
+    <link rel="shortcut icon" href="./assets/images/Hexgon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light sticky-top bg-white p-0">
+  <div class="container-fluid container-md">
+    <h1 class="ml-5 ml-md-0 py-1">
+      <a class="logo"href="./index.html">D'Perfume</a>
+    </h1>
+    <a class="ml-auto mr-8 text-info position-relative d-md-none" href="#"><span class="material-icons">shopping_cart</span><span class="badge badge-primary rounded-circle">3</span></a>
+    <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="headerMenu">
+      <ul class="navbar-nav ml-md-auto px-0">
+        <li class="nav-item active text-center order-0">
+          <a class="nav-link py-4 px-0 mr-5" href="./product.html"><span class="material-icons mr-1 d-none d-md-inline">store</span> Product<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item text-center order-4 order-md-1">
+          <a class="nav-link py-4 px-0 mr-5" href="login.html"><span class="material-icons mr-1 d-none d-md-inline">person</span>Log in</a>
+        </li>
+        <li class="nav-item text-center order-1">
+          <a class="nav-link py-4 px-0 mr-5" href="#"><span class="material-icons mr-1 d-none d-md-inline">favorite</span>Wishlist</a>
+        </li>
+        <li class="nav-item text-center d-none d-md-block order-5">
+          <a class="nav-link py-4 px-0 mr-5" href="#"><span class="material-icons mr-1">shopping_cart</span>Cart(3)</a>
+        </li>
+        <li class="nav-item d-block d-md-none text-center order-2">
+          <a class="nav-link py-4 mr-5" href="#">Blog</a>
+        </li>
+        <li class="nav-item d-block d-md-none text-center order-3">
+          <a class="nav-link py-4 mr-5" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <nav class="bg-primary d-none d-md-block ml-n6">
+    <ul class="container d-flex list-unstyled">
+      <li><a class="text-white h5 p-4 hover-bg--primaryLight ml-0" href="#">CHANEL</a></li>
+      <li><a class="text-white h5 p-4 hover-bg--primaryLight" href="#">Jo Malone</a></li>
+      <li><a class="text-white h5 p-4 hover-bg--primaryLight" href="#">Curology</a></li>
+      <li><a class="text-white h5 p-4 hover-bg--primaryLight" href="#">Dior</a></li>
+      <li><a class="text-white h5 p-4 hover-bg--primaryLight" href="#">Chloe</a></li>
+      <li><a class="text-white h5 p-4 hover-bg--primaryLight" href="#">ZARA</a></li>
+    </ul>
+  </nav>
+
+  
+<main class="container grid-wrap">
+  <div class="row align-items-center" data-aos="fade-up">
+    <div class="col-12 col-md-8 mb-md-5">
+      <div class="pt-100 bg-cover mb-7 mb-md-0" style="background-image: url('./assets/images/login1.jpg');"></div>
+    </div>
+    <div class="col-12 col-md-4 mb-15">
+      <h2 class="mb-4 font-weight-bold">Log in</h2>
+      <form class="needs-validation" novalidate>
+        <div class="form-group">
+          <label class="text-dark" for="email_login">帳號</label>
+          <input type="email" class="form-control" name="email" id="email_login" aria-describedby="emailHelp" placeholder="email@example.com" required>
+          <div class="invalid-feedback">
+            帳號，不可空白!
+          </div>
+        </div>
+        <div class="form-group mb-9">
+          <label class="text-dark" for="password_login">密碼</label>
+          <input type="password" class="form-control" name="password" id="password_login" aria-describedby="passwordlHelp" placeholder="Password" required>
+          <div class="invalid-feedback">
+            密碼，不可空白!
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="#">忘記密碼</a>
+          <div class="d-flex">
+            <button class="btn btn-outline-primary mr-2">註冊</button>
+            <input type="submit" class="btn btn-primary" value="登入">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+  
+  <footer class="bg-primary">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <h2 class="logo mr-6 mr-md-5" style="background-image: url('./assets/images/d’Perfumewhite@2x.png');">
+        <a href="#">D'Perfume</a>
+      </h2>
+      <p class="text-white font-sm h6-md text-md-base py-8 py-md-7">© 2020. All Rights Reserved.</p>
+      <nav class="d-none d-md-block ml-auto">
+        <ul class="d-flex list-unstyled text-white">
+          <li><a class="lh-1 text-white h4 hover-link--primaryLight py-7 mr-9" href="#">Product</a></li>
+          <li><a class="lh-1 text-white h4 hover-link--primaryLight py-7 mr-9" href="#">Blog</a></li>
+          <li><a class="lh-1 text-white h4 hover-link--primaryLight py-7" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
