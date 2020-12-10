@@ -1,0 +1,196 @@
+---
+title: 會員中心 | D'Perfume
+layout: ./app/layout.ejs
+engine: ejs
+current:  member
+---
+
+<main class="container py-10 pt-md-20 pb-md-15">
+  <div class="row">
+    <div class="col-md-3 col-lg-2 mb-10 list-unstyled">
+      <h2 class="d-none d-md-block mb-7 h5 text-gary">會員中心</h2>
+      <ul class="list-unstyled d-flex justify-content-between flex-md-column">
+        <li class="active mb-0 mb-md-8">
+          <a href="#" class="text-gary border-bottom border-primary d-inline-flex">會員資料修改</a></li>
+        <li class=" mb-0 mb-md-8">
+          <a href="#" class="text-gary d-inline-flex">訂單查詢</a></li>
+        <li class=" mb-0 mb-md-8">
+          <a href="#" class="text-gary d-inline-flex">退／換貨申請</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-7 order-1 order-lg-0">
+      <h4 class="h6 border-bottom border-info pb-2 mb-4">個人資料修改</h4>
+      <form class="text-gary mb-12">
+        <div class="form-group row no-gutters">
+          <label for="id" class="col-3 col-xl-2 col-form-label">會員帳號</label>
+          <div class="col-9 col-xl-7">
+            <input type="text" readonly class="form-control-plaintext" id="id" value="email@example.com">
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="Name" class="col-3 col-xl-2 col-form-label">會員姓名</label>
+          <div class="col-9 col-xl-7">
+            <input type="text" class="form-control" id="Name">
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="gender" class="col-3 col-xl-2 col-form-label">會員性別</label>
+          <div class="col-9 col-xl-7">
+            <input type="text" class="form-control" id="gender">
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="email" class="col-3 col-xl-2 col-form-label">電子信箱</label>
+          <div class="col-9 col-xl-7">
+            <input type="text" class="form-control" id="email" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="phone" class="col-3 col-xl-2 col-form-label">手機號碼</label>
+          <div class="col-9 col-xl-7">
+            <input type="text" class="form-control" id="phone">
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="phone" class="col-3 col-xl-2 col-form-label">聯絡地址</label>
+          <div class="col-9 col-xl-7">
+            <div class="form-row mb-2">
+              <div class="col-8 col-md-6">
+                <select class="form-control" id="country_name" name="country_name">
+                  <option selected disabled>台灣及離島</option>
+                  <option value="台灣">台灣</option>
+                  <option value="日本">日本</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row mb-2">
+              <div class="col-4 col-md-6">
+                <select class="form-control" id="city" name="city">
+                  <option selected disabled>縣市</option>
+                  <option value="台北市">台北市</option>
+                  <option value="桃園市">桃園市</option>
+                </select>
+              </div>
+              <div class="col-4 col-md-6">
+                <select class="form-control" id="district" name="district">
+                  <option selected disabled>行政區</option>
+                  <option value="桃園區">桃園區</option>
+                  <option value="中壢區">中壢區</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="text" class="form-control" id="phone" name="address" placeholder="請輸入地址">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter" value="true">
+                <label class="form-check-label" for="newsletter">我願意收到最新優惠情報</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="send_country" class="col-3 col-xl-2 col-form-label">配送地址</label>
+          <div class="col-9 col-xl-7">
+            <div class="form-row mb-2">
+              <div class="col-8 col-md-6">
+                <select class="form-control" id="send_country" name="sned_country">
+                  <option selected disabled>台灣及離島</option>
+                  <option value="台灣">台灣</option>
+                  <option value="日本">日本</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row mb-2">
+              <div class="col-4 col-md-6">
+                <select class="form-control" id="send_city" name="sned_city">
+                  <option selected disabled>縣市</option>
+                  <option value="台北市">台北市</option>
+                  <option value="桃園市">桃園市</option>
+                </select>
+              </div>
+              <div class="col-4 col-md-6">
+                <select class="form-control" id="send_district" name="sned_district">
+                  <option selected disabled>行政區</option>
+                  <option value="桃園區">桃園區</option>
+                  <option value="中壢區">中壢區</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row mb-4">
+              <div class="col">
+                <input type="text" class="form-control" id="send_phone" name="sned_address" placeholder="請輸入地址">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <div class="col-3 col-xl-2"></div>
+          <div class="col-9 col-xl-7">
+            <input type="submit" class="btn btn-primary w-50" value="確定修改">
+          </div>
+        </div>
+      </form>
+      <h4 class="h6 border-bottom border-info pb-2 mb-4">修改密碼</h4>
+      <form class="text-gary mb-12">
+        <div class="form-group row no-gutters">
+          <label for="old-password" class="col-3 col-xl-2 col-form-label">舊密碼</label>
+          <div class="col-9 col-xl-7">
+            <input type="password" class="form-control" name="old-password" id="old-password">
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="new-password" class="col-3 col-xl-2 col-form-label">新密碼</label>
+          <div class="col-9 col-xl-7">
+            <input type="password" class="form-control" name="new-password" id="new-password">
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="repeat-password" class="col-3 col-xl-2 col-form-label">確認密碼</label>
+          <div class="col-9 col-xl-7">
+            <input type="password" class="form-control" name="repeat-password" id="repeat-password">
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <div class="col-3 col-xl-2"></div>
+          <div class="col-9 col-xl-9">
+            <input type="submit" class="btn btn-primary w-50" value="變更密碼">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-9 col-lg-3 mb-10 ml-md-auto">
+      <h3 class="h6 text-gary mb-6 mb-md-5">
+        <span class="material-icons mr-1 text-black">person</span>
+        會員編碼<span class="ml-2 font-weight-bold">T00020080615</span></h3>
+      <table class="table table-sm table-hover w-100 mb-0">
+        <tbody>
+          <tr class="row no-gutters">
+            <th class="col-4 col-md-3 col-lg-4">購物車</th>
+            <td class="col-8 col-md-9 col-lg-8 pl-2">56</td>
+          </tr>
+          <tr class="row no-gutters">
+            <th class="col-4 col-md-3 col-lg-4">我的收藏</th>
+            <td class="col-8 col-md-9 col-lg-8 pl-2">23</td>
+          </tr>
+          <tr class="row no-gutters">
+            <th class="col-4 col-md-3 col-lg-4">我的訂單</th>
+            <td class="col-8 col-md-9 col-lg-8 pl-2">8</td>
+          </tr>
+          <tr class="row no-gutters">
+            <th class="col-4 col-md-3 col-lg-4">會員紅利</th>
+            <td class="col-8 col-md-9 col-lg-8 pl-2">2680</td>
+          </tr>
+          <tr class="row no-gutters">
+            <th class="col-4 col-md-3 col-lg-4">邀請碼</th>
+            <td class="col-8 col-md-9 col-lg-8 pl-2">TK2075</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="font-sm text-warning">新戶輸入邀請碼即可獲贈紅利點數1000點</p>
+    </div>
+  </div>
+</main>

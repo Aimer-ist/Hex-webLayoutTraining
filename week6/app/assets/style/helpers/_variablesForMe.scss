@@ -19,19 +19,6 @@ $theme-colors: (
   'secondary-dark':$secondary-dark,
 );
 
-
-// $theme-colors
-@mixin theme-colors($grid-breakpoints: null) {
-  @each $key, $value in $theme-colors {
-    .text#{$grid-breakpoints}-#{$key} {
-        color: $value !important;
-    }
-    .bg#{$grid-breakpoints}-#{$key} {
-        background: $value !important;
-    }
-  }
-}
-
 /* font-size */
 $font-size-base: 1rem;
 $font-size: () !default;
@@ -72,33 +59,50 @@ $spacers: (
 $headings-margin-bottom: 0;
 $headings-line-height:1.5;
 $paragraph-margin-bottom: 0;
-
 $link-color: $primary-light;
-$border-color:#CED4DA;
 $navbar-light-active-color: $primary-light;
 $navbar-light-color: $secondary;
+
+// border
+$border-width:2px;
+$border-color:#CED4DA;
+
+// table
+$table-color: $gary;
+$table-border-width: 0;
+$table-cell-padding-sm: 0.5rem;
 
 // btn
 $btn-padding-x: 1rem;
 $btn-border-radius-lg: 0px;
 $btn-padding-y-lg:  0.75rem;
 $btn-padding-x-lg:   24px;
+$btn-border-width: 1px;
+$btn-focus-box-shadow: transparent;
 
-
-//label
+// form-label
 $label-margin-bottom: 0.25rem;
 
-/* input */
-$input-color:#495057;
+// form
+$form-group-margin-bottom: 1.25rem;
+
+$input-color:$info;
+$input-border-width: 1px;
 $input-border-color: $border-color;
 $input-placeholder-color: $info;
-$form-group-margin-bottom: 1.25rem; // 20px
+$input-plaintext-color: $info;
+$input-padding-y: 0.5rem;
+
 $input-height-lg: 60px;
 $input-font-size-lg: 1rem;
-$input-padding-y: 0.75rem;
+
 $input-group-addon-color: $white;
 $input-group-addon-bg: $primary;
 $input-group-addon-border-color: $primary;
+
+$custom-select-line-height: 1;
+$custom-select-height: 50px;
+$custom-select-color: #495057;
 
 // card
 $card-spacer-y: 0;

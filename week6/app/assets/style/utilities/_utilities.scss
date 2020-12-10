@@ -20,3 +20,9 @@
 .border-2 {
   border-width: 2px;
 }
+
+.order-lg-0 {
+  @include media-breakpoint-up(lg) {
+    order: 0;
+  }
+}
