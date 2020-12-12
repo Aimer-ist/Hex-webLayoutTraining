@@ -14886,6 +14886,12 @@ a:hover {
   background: rgba(255, 255, 255, 0.5);
 }
 
+.subscribe {
+  background: url("../images/index10.jpg") no-repeat center;
+  background-size: cover;
+  height: 600px;
+}
+
 .banner {
   background-image: url("../images/index1.jpg");
   height: 480px;
@@ -14895,12 +14901,6 @@ a:hover {
   .banner {
     height: 870px;
   }
-}
-
-.subscribe {
-  background: url("../images/index10.jpg") no-repeat center;
-  background-size: cover;
-  height: 600px;
 }
 
 /*# sourceMappingURL=all.css.map */
