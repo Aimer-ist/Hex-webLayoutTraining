@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700;800&display=swap');
+
 @import "functions";
 @import "./helpers/variables";
 @import "bootstrap";
+
+@import "base";
+
+@import "utilities/text";
+@import "utilities/utilities";
+
+@import "pages/layout";
