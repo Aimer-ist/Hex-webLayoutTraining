@@ -1,0 +1,9 @@
+.grid-h {
+  height: calc(100vh - 72px - 107px);
+  @include media-breakpoint-up(md) {
+    height: calc(100vh - 72px - 70px);
+  }
+  @include media-breakpoint-up(lg) {
+    height: calc(100vh - 72px - 73px);
+  }
+}

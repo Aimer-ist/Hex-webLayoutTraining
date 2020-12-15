@@ -263,7 +263,7 @@ $border-width:                1px !default;
 $border-color:                $light; // $gray-300 !default;
 
 $border-radius:               .25rem !default;
-$border-radius-lg:            .3rem !default;
+$border-radius-lg:            .5rem;// .3rem !default;
 $border-radius-sm:            .2rem !default;
 
 $rounded-pill:                50rem !default;
@@ -377,7 +377,7 @@ $blockquote-small-color:      $gray-600 !default;
 $blockquote-small-font-size:  $small-font-size !default;
 $blockquote-font-size:        $font-size-base * 1.25 !default;
 
-$hr-border-color:             rgba($black, .1) !default;
+$hr-border-color:             $white; // rgba($black, .1) !default;
 $hr-border-width:             $border-width !default;
 
 $mark-padding:                .2em !default;
@@ -398,7 +398,7 @@ $hr-margin-y:                 $spacer !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          .75rem !default;
+$table-cell-padding:          .5rem; //.75rem !default;
 $table-cell-padding-sm:       .3rem !default;
 
 $table-color:                 $body-color !default;
@@ -408,7 +408,7 @@ $table-hover-color:           $table-color !default;
 $table-hover-bg:              rgba($black, .075) !default;
 $table-active-bg:             $table-hover-bg !default;
 
-$table-border-width:          $border-width !default;
+$table-border-width:          0; // $border-width !default;
 $table-border-color:          $border-color !default;
 
 $table-head-bg:               $gray-200 !default;
@@ -433,8 +433,8 @@ $table-border-level:          -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         0.9375rem; //.375rem !default;
+$input-btn-padding-x:         0.75rem; //.75rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
@@ -461,7 +461,7 @@ $input-btn-border-width:      $border-width !default;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 $btn-padding-y:               $input-btn-padding-y !default;
-$btn-padding-x:               $input-btn-padding-x !default;
+$btn-padding-x:               2rem; // $input-btn-padding-x !default;
 $btn-font-family:             $input-btn-font-family !default;
 $btn-font-size:               $input-btn-font-size !default;
 $btn-line-height:             $input-btn-line-height !default;
@@ -500,7 +500,7 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 
 // Forms
 
-$label-margin-bottom:                   .5rem !default;
+$label-margin-bottom:                   0.25rem; // .5rem !default;
 
 $input-padding-y:                       $input-btn-padding-y !default;
 $input-padding-x:                       $input-btn-padding-x !default;
