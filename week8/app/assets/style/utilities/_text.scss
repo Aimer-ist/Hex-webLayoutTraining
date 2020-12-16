@@ -9,6 +9,17 @@
   }
 }
 
-lh-1 {
+.font-family-raleway {
+  font-family: $font-family-raleway;
+}
+
+.lh-1 {
   line-height: 1;
+}
+
+.custom-font-size {
+  font-size: 9px;
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
 }
