@@ -1,7 +1,27 @@
+.card {
+  :hover {
+    text-decoration: none;
+  }
+}
 .card-overlay {
   height: 78px;
 }
 .card-img-overlay {
   padding: 1rem 1.5rem;
   color: #ffffff98;
+}
+
+.card-img {
+  height: 150px;
+  @include media-breakpoint-up(lg) {
+    height: 175px;
+  }
+}
+
+.card-h {
+  height: 150px;
+
+  @include media-breakpoint-up(lg) {
+    height: 175px;
+  }
 }
