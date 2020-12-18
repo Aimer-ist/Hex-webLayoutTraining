@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ALOHA</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  
+  
+  <header class="container-fluid sticky-top bg-white px-0">
+    <div class="container">
+      <div class="navbar navbar-expand-md navbar-light py-md-4 sticky-top">
+        <button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="navbar-brand">
+          <a class="logo" href="./index.html">ALOHA</a>
+        </h1>
+        
+          <div class="navbar-nav d-md-none">
+            <a class="nav-link" href="../login.html">Login</a>
+          </div>
+          <nav class="collapse navbar-collapse" id="headerNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown mr-8">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons">language</span></a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">繁體中文</a>
+                  <a class="dropdown-item" href="#">簡體中文</a>
+                  <a class="dropdown-item" href="#">English</a>
+                </div>
+              </li>
+              <li class="nav-item mr-8">
+                <a class="nav-link" href="#">Sign up</a>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link" href="../login.html">Login</a>
+              </li>
+            </ul>
+          </nav>
+        
+      </div>
+    </div>
+  </header>
+
+  
+  <main>
+  <div class="banner bg-cover position-relative" style="background-image: url('./assets/images/index-banner.jpg');">
+    <h2 class="h2 h1-md text-white font-weight-bolder d-flex align-items-center justify-content-center h-100">Discover your ideal hotel</h2>
+    <div class="container search-bar d-flex justify-content-center">
+      <div class="row justify-content-center w-100">
+        <form class="col-md-10 py-6 px-4 bg-light d-lg-flex rounded rounded-lg">
+          <div class="d-lg-flex">
+            <div class="input-group col-lg-4 px-2 mb-4 mb-lg-0">
+              <div class="input-group-prepend">
+                <lebel class="input-group-text border-0 bg-white" id="basic-addon1"><span class="material-icons text-black">
+                place
+              </span></lebel>
+              </div>
+              <input type="search" class="form-control border-0" placeholder="Destination" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group col-lg-4 px-2 mb-4 mb-lg-0">
+              <div class="input-group-prepend">
+                <lebel class="input-group-text border-0 bg-white" id="basic-addon1"><span class="material-icons text-black">
+                date_range
+              </span></lebel>
+              </div>
+              <input type="search" class="form-control border-0" placeholder="Check-in / Check-out" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group col-lg-4 px-2 mb-4 mb-lg-0">
+              <div class="input-group-prepend">
+                <lebel class="input-group-text border-0 bg-white" id="basic-addon1"><span class="material-icons text-black">
+                person
+              </span></lebel>
+              </div>
+              <input type="search" class="form-control border-0" placeholder="Guests" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col col-lg-auto px-2">
+            <a href="searchResult.html" class="btn btn-primary btn-block font-weight-bold">SEARCH</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <section class="container mb-12">
+    <h3 class="h4 h2-md mb-6">Top Choices</h3>
+    <ul class="nav font-family-raleway font-weight-bold h5 h4-md mb-6" role="tablist" id="nav-tab">
+      <li class="nav-item">
+        <a class="nav-link nav-link--border active" id="navTab-Bali" data-toggle="tab"  href="#nav-Bali" role="tab" aria-controls="nav-bali" aria-selected="true">Bali<sup>128</sup></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link--border" id="navTab-Okinawa" data-toggle="tab"  href="#nav-Okinawa" role="tab" aria-controls="nav-Okinawa" aria-selected="false">Okinawa<sup>67</sup></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link--border" id="navTab-Taipei" data-toggle="tab"  href="#nav-Taipei" role="tab" aria-controls="nav-Taipei" aria-selected="false">Taipei<sup>53</sup></a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="nav-Bali" role="tabpanel" aria-labelledby="navTab-Bali">
+        <ul class="row list-unstyled flex-nowrap overflow-auto pb-6">
+          <li class="col-9 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="bg-cover rounded-lg" style="background-image: url('./assets/images/top1.jpg'); padding-top: 70%;"></div>
+              <div class="card-body">
+                <h4 class="card-title h6 py-2">Hotel Aqua</h4>
+                <p class="card-text font-sm mb-2">
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  5.0
+                  <span class="font-xs text-gary">・2k reviews</span>
+                </p>
+                <p class="font-sm">TWD 2,480<del class="font-xs text-gary ml-2">TWD 3,980</del></p>
+              </div>
+            </div>
+          </li>
+          <li class="col-9 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="bg-cover rounded-lg" style="background-image: url('./assets/images/top2.jpg'); padding-top: 70%;"></div>
+              <div class="card-body">
+                <h4 class="card-title h6 py-2">Mr. Kawasaki Inn</h4>
+                <p class="card-text font-sm mb-2">
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  4.0
+                  <span class="font-xs text-gary">・500 reviews</span>
+                </p>
+                <p class="font-sm">TWD 3,380
+              </div>
+            </div>
+          </li>
+          <li class="col-9 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="bg-cover rounded-lg" style="background-image: url('./assets/images/top3.jpg'); padding-top: 70%;"></div>
+              <div class="card-body">
+                <h4 class="card-title h6 py-2">Weekly Paradise</h4>
+                <p class="card-text font-sm mb-2">
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  4.0
+                  <span class="font-xs text-gary">・470 reviews</span>
+                </p>
+                <p class="font-sm">TWD 4,780</p>
+              </div>
+            </div>
+          </li>
+          <li class="col-9 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="bg-cover rounded-lg" style="background-image: url('./assets/images/top4.jpg'); padding-top: 70%;"></div>
+              <div class="card-body">
+                <h4 class="card-title h6 py-2">Beast Hotel</h4>
+                <p class="card-text font-sm mb-2">
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  4.0
+                  <span class="font-xs text-gary">・283 reviews</span>
+                </p>
+                <p class="font-sm">TWD 1,980</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="nav-Okinawa" role="tabpanel" aria-labelledby="navTab-Okinawa">
+        <ul class="row list-unstyled flex-nowrap overflow-auto pb-6">
+          <li class="col-9 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="bg-cover rounded-lg" style="background-image: url('./assets/images/Osaka.jpg'); padding-top: 70%;"></div>
+              <div class="card-body">
+                <h4 class="card-title h6 py-2">Hotel Aqua</h4>
+                <p class="card-text font-sm mb-2">
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  5.0
+                  <span class="font-xs text-gary">・2k reviews</span>
+                </p>
+                <p class="font-sm">TWD 2,480<del class="font-xs text-gary ml-2">TWD 3,980</del></p>
+              </div>
+            </div>
+          </li>
+          <li class="col-9 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="bg-cover rounded-lg" style="background-image: url('./assets/images/Kyoto.jpg'); padding-top: 70%;"></div>
+              <div class="card-body">
+                <h4 class="card-title h6 py-2">Mr. Kawasaki Inn</h4>
+                <p class="card-text font-sm mb-2">
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  4.0
+                  <span class="font-xs text-gary">・500 reviews</span>
+                </p>
+                <p class="font-sm">TWD 3,380
+              </div>
+            </div>
+          </li>
+          <li class="col-9 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="bg-cover rounded-lg" style="background-image: url('./assets/images/Reykjavic.jpg'); padding-top: 70%;"></div>
+              <div class="card-body">
+                <h4 class="card-title h6 py-2">Weekly Paradise</h4>
+                <p class="card-text font-sm mb-2">
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  4.0
+                  <span class="font-xs text-gary">・470 reviews</span>
+                </p>
+                <p class="font-sm">TWD 4,780</p>
+              </div>
+            </div>
+          </li>
+          <li class="col-9 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="bg-cover rounded-lg" style="background-image: url('./assets/images/Paris.jpg'); padding-top: 70%;"></div>
+              <div class="card-body">
+                <h4 class="card-title h6 py-2">Beast Hotel</h4>
+                <p class="card-text font-sm mb-2">
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  4.0
+                  <span class="font-xs text-gary">・283 reviews</span>
+                </p>
+                <p class="font-sm">TWD 1,980</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="nav-Taipei" role="tabpanel" aria-labelledby="navTab-Taipei">
+        <ul class="row list-unstyled flex-nowrap overflow-auto pb-6">
+          <li class="col-9 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="bg-cover rounded-lg" style="background-image: url('./assets/images/italy.jpg'); padding-top: 70%;"></div>
+              <div class="card-body">
+                <h4 class="card-title h6 py-2">Hotel Aqua</h4>
+                <p class="card-text font-sm mb-2">
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  5.0
+                  <span class="font-xs text-gary">・2k reviews</span>
+                </p>
+                <p class="font-sm">TWD 2,480<del class="font-xs text-gary ml-2">TWD 3,980</del></p>
+              </div>
+            </div>
+          </li>
+          <li class="col-9 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="bg-cover rounded-lg" style="background-image: url('./assets/images/Thailand.jpg'); padding-top: 70%;"></div>
+              <div class="card-body">
+                <h4 class="card-title h6 py-2">Mr. Kawasaki Inn</h4>
+                <p class="card-text font-sm mb-2">
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  4.0
+                  <span class="font-xs text-gary">・500 reviews</span>
+                </p>
+                <p class="font-sm">TWD 3,380
+              </div>
+            </div>
+          </li>
+          <li class="col-9 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="bg-cover rounded-lg" style="background-image: url('./assets/images/NewZealand.jpg'); padding-top: 70%;"></div>
+              <div class="card-body">
+                <h4 class="card-title h6 py-2">Weekly Paradise</h4>
+                <p class="card-text font-sm mb-2">
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  4.0
+                  <span class="font-xs text-gary">・470 reviews</span>
+                </p>
+                <p class="font-sm">TWD 4,780</p>
+              </div>
+            </div>
+          </li>
+          <li class="col-9 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="bg-cover rounded-lg" style="background-image: url('./assets/images/Paris.jpg'); padding-top: 70%;"></div>
+              <div class="card-body">
+                <h4 class="card-title h6 py-2">Beast Hotel</h4>
+                <p class="card-text font-sm mb-2">
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  <i class="material-icons custom-font-size text-black">star</i>
+                  4.0
+                  <span class="font-xs text-gary">・283 reviews</span>
+                </p>
+                <p class="font-sm">TWD 1,980</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="container mb-12">
+    <h3 class="h4 h2-md mb-6">Top Choices</h3>
+    <ul class="row list-unstyled">
+      <li class="col-md-6 col-lg-4 mb-2 mb-md-4">
+        <a href="#" class="card card-overlay">
+          <img src="./assets/images/Osaka.jpg" alt="" class="card-img h-100 img-cover">
+          <div class="card-img-overlay bg-gradual d-flex justify-content-between align-items-center">
+            <div>
+              <p class="font-xs font-weight-bold">JAPAN</p>
+              <h4 class="card-title text-white">Osaka</h4>
+            </div>
+            <span class="material-icons text-white">keyboard_arrow_down</span>
+          </div>
+        </a>
+      </li>
+      <li class="col-md-6 col-lg-4 mb-2 mb-md-4">
+        <a href="#" class="card card-overlay">
+          <img src="./assets/images/Kyoto.jpg" alt="Kyoto" class="card-img h-100 img-cover">
+          <div class="card-img-overlay bg-gradual d-flex justify-content-between align-items-center">
+            <div>
+              <p class="font-xs font-weight-bold">JAPAN</p>
+              <h4 class="card-title text-white">Kyoto</h4>
+            </div>
+            <span class="material-icons text-white">keyboard_arrow_down</span>
+          </div>
+        </a>
+      </li>
+      <li class="col-md-6 col-lg-4 mb-2 mb-md-4">
+        <a href="#" class="card card-overlay">
+          <img src="./assets/images/Reykjavic.jpg" alt="Reykjavík" class="card-img h-100 img-cover">
+          <div class="card-img-overlay bg-gradual d-flex justify-content-between align-items-center">
+            <div>
+              <p class="font-xs font-weight-bold">iceland</p>
+              <h4 class="card-title text-white">Reykjavík</h4>
+            </div>
+            <span class="material-icons text-white">keyboard_arrow_down</span>
+          </div>
+        </a>
+      </li>
+      <li class="col-md-6 col-lg-4 mb-2 mb-md-4">
+        <a href="#" class="card card-overlay">
+          <img src="./assets/images/Paris.jpg" alt="Paris" class="card-img h-100 img-cover">
+          <div class="card-img-overlay bg-gradual d-flex justify-content-between align-items-center">
+            <div>
+              <p class="font-xs font-weight-bold">France</p>
+              <h4 class="card-title text-white">Paris</h4>
+            </div>
+            <span class="material-icons text-white">keyboard_arrow_down</span>
+          </div>
+        </a>
+      </li>
+      <li class="col-md-6 col-lg-4 mb-2 mb-md-4">
+        <a href="#" class="card card-overlay">
+          <img src="./assets/images/Roma.jpg" alt="Roma" class="card-img h-100 img-cover">
+          <div class="card-img-overlay bg-gradual d-flex justify-content-between align-items-center">
+            <div>
+              <p class="font-xs font-weight-bold">Italy</p>
+              <h4 class="card-title text-white">Roma</h4>
+            </div>
+            <span class="material-icons text-white">keyboard_arrow_down</span>
+          </div>
+        </a>
+      </li>
+      <li class="col-md-6 col-lg-4 mb-2 mb-md-4">
+        <a href="#" class="card card-overlay">
+          <img src="./assets/images/Bangkok.jpg" alt="Bangkok" class="card-img h-100 img-cover">
+          <div class="card-img-overlay bg-gradual d-flex justify-content-between align-items-center">
+            <div>
+              <p class="font-xs font-weight-bold">Thailand</p>
+              <h4 class="card-title text-white">Bangkok</h4>
+            </div>
+            <span class="material-icons text-white">keyboard_arrow_down</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section class="container mb-12">
+    <h3 class="h4 h2-md mb-6">Get Inspiration</h3>
+    <ul class="row list-unstyled flex-nowrap overflow-auto pb-6">
+      <li class="col-9 col-md-4">
+        <div class="card">
+          <div class="bg-cover rounded-lg mb-6" style="background-image: url('./assets/images/italy.jpg'); padding-top: 75%;"></div>
+          <div class="card-body">
+            <h4 class="h5 h4-md mb-2">The fifth most visited country</h4>
+            <p class="font-xs h6-md">Italy is the fifth most visited country in the world, with a total of 52.3 million…</p>
+          </div>
+        </div>
+      </li>
+      <li class="col-9 col-md-4">
+        <div class="card">
+          <div class="bg-cover rounded-lg mb-6" style="background-image: url('./assets/images/Thailand.jpg'); padding-top: 75%;"></div>
+          <div class="card-body">
+            <h4 class="h5 h4-md mb-2">Visit Thailand for Bangkok</h4>
+            <p class="font-xs h6-md">Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…</p>
+          </div>
+        </div>
+      </li>
+      <li class="col-9 col-md-4">
+        <div class="card">
+          <div class="bg-cover rounded-lg mb-6" style="background-image: url('./assets/images/NewZealand.jpg'); padding-top: 75%;"></div>
+          <div class="card-body">
+            <h4 class="h5 h4-md mb-2">Lord of the Rings Tour</h4>
+            <p class="font-xs h6-md">The national cuisine has been described as Pacific Rim, incorporating the…</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+</main>
+
+  
+  
+<section class="bg-light py-6 py-md-23">
+  <div class="container">
+    <div class="row justify-content-center">
+      <h2 class="h4 h1-md mb-4 mb-md-6">Subscribe for Exclusive Offer</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="input-group col-sm-10 col-lg-6">
+        <input type="text" class="form-control form-control-lg border-0" placeholder="Your email address" aria-describedby="subscribe">
+        <div class="input-group-append">
+          <input type="submit" class="btn btn-primary font-weight-bold px-4 px-md-8" value="SUBSCRIBE">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  
+  <footer class="container font-sm py-6 border-top">
+  <div class="d-flex flex-column-reverse align-items-center flex-md-row justify-content-md-between">
+    <P class="mr-lg-16">© 2020 ALOHA, Inc. All rights reserved.</P>
+    <ul class="list-unstyled d-flex mb-4 mb-md-0">
+      <li><a class="mr-6 text-info" href="#">FAQs</a></li>
+      <li><a class="mr-6 text-info" href="#">Terms of use</a></li>
+      <li><a class="text-info" href="#">Privacy policy</a></li>
+    </ul>
+     
+      <div class="d-none d-lg-block ml-auto">
+        <ul class="list-unstyled d-flex">
+          <li class="mr-6">
+            <a class="dropdown-toggle text-info" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><span class="material-icons text-black mr-2">language</span>English</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">繁體中文</a>
+              <a class="dropdown-item" href="#">簡體中文</a>
+            </div>
+          </li>
+          <li>
+            <a class="dropdown-toggle text-info" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><span class="material-icons text-black mr-2">attach_money</span>USD</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">TWD</a>
+              <a class="dropdown-item" href="#">CNY</a>
+            </div>
+          </li>
+        </ul> 
+      </div>
+    
+  </div>
+</footer>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+</html>
