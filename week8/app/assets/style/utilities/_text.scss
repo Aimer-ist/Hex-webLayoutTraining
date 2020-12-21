@@ -9,6 +9,10 @@
   }
 }
 
+.icon-size-18 {
+  font-size: 18px;
+}
+
 .font-family-raleway {
   font-family: $font-family-raleway;
 }
@@ -17,9 +21,8 @@
   line-height: 1;
 }
 
-.custom-font-size {
-  font-size: 9px;
+.font-weight-bolder-md {
   @include media-breakpoint-up(md) {
-    font-size: 18px;
+    font-weight: $font-weight-bolder !important;
   }
 }

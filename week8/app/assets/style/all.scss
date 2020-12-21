@@ -2,16 +2,26 @@
 
 @import "functions";
 @import "./helpers/variables";
+
 @import "bootstrap";
+@import "daterangepicker";
 
 @import "base";
 @import "grid";
 
 @import "components/nav";
 @import "components/card";
+@import "components/page";
+@import "components/dropdown";
+@import "components/modal";
+@import "components/vendors";
 
 @import "utilities/text";
+@import "utilities/sizing";
 @import "utilities/utilities";
 @import "utilities/animations";
 
-@import "pages/layout";
+@import "layout/header";
+@import "layout/subscribe";
+
+@import "pages/index";

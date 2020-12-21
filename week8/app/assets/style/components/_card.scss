@@ -10,18 +10,21 @@
   padding: 1rem 1.5rem;
   color: #ffffff98;
 }
-
 .card-img {
   height: 150px;
   @include media-breakpoint-up(lg) {
     height: 175px;
   }
+  &.left-rounder-md {
+    border-radius: 0px;
+    @include media-breakpoint-up(md) {
+      border-radius: .5rem 0 0 .5rem;
+    }
+  }
 }
-
-.card-h {
-  height: 150px;
-
-  @include media-breakpoint-up(lg) {
-    height: 175px;
+.card + .card {
+  border-top: 4px solid #f1f0f8;
+  @include media-breakpoint-up(md) {
+    border-top-width: 2px;
   }
 }

@@ -35,14 +35,28 @@
     }
   }
 }
-.line-nowrap {
-  white-space:nowrap
+.rounded-left-md {
+  @include media-breakpoint-up(md) {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
 }
 
+.bg-white-md {
+  @include media-breakpoint-up(md) {
+    background-color:  $white !important;
+  }
+}
+.bg-transparent-lg {
+  @include media-breakpoint-up(lg) {
+    background-color: $transparent !important;
+  }
+}
 
 // 之後放元件
 .tag {
   padding: 2px .5rem;
+  line-height: 1;
   border-radius: $rounded-pill;
   color: $info;
   background: $light;
@@ -50,5 +64,22 @@
   @include media-breakpoint-up(xl) {
     padding: 0.25rem 0.5rem;
     font-size: 0.75rem;
+  }
+}
+.tag + .tag {
+  margin-bottom: .25rem;
+}
+
+// 待改
+.sort__menu--scroll {
+  @include media-breakpoint-up(md) {
+    min-width: 100%;
+    overflow-x: scroll;
+  }
+  @include media-breakpoint-up(lg) {
+    overflow-x: hidden;
+  }
+  &::-webkit-scrollbar {
+    display: none;
   }
 }

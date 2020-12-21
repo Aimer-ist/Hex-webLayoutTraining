@@ -177,6 +177,7 @@ $sizes: () !default;
 $sizes: map-merge(
   (
     25: 25%,
+    33: 33.333%,
     50: 50%,
     75: 75%,
     100: 100%,
@@ -371,7 +372,7 @@ $lead-font-weight:            300 !default;
 
 $small-font-size:             80% !default;
 
-$text-muted:                  $gray-600 !default;
+$text-muted:                  $body-color;// $gray-600 !default;
 
 $blockquote-small-color:      $gray-600 !default;
 $blockquote-small-font-size:  $small-font-size !default;
@@ -467,10 +468,10 @@ $btn-font-size:               $input-btn-font-size !default;
 $btn-line-height:             $input-btn-line-height !default;
 $btn-white-space:             null !default; // Set to `nowrap` to prevent text wrapping
 
-$btn-padding-y-sm:            $input-btn-padding-y-sm !default;
-$btn-padding-x-sm:            $input-btn-padding-x-sm !default;
+$btn-padding-y-sm:            .5rem; // $input-btn-padding-y-sm !default;
+$btn-padding-x-sm:            .5rem; //$input-btn-padding-x-sm !default;
 $btn-font-size-sm:            $input-btn-font-size-sm !default;
-$btn-line-height-sm:          $input-btn-line-height-sm !default;
+$btn-line-height-sm:          1.2;//$input-btn-line-height-sm !default;
 
 $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
@@ -658,9 +659,9 @@ $custom-select-font-size-lg:        $input-font-size-lg !default;
 $custom-select-height-lg:           $input-height-lg !default;
 
 $custom-range-track-width:          100% !default;
-$custom-range-track-height:         .5rem !default;
+$custom-range-track-height:         0.125rem; //.5rem !default;
 $custom-range-track-cursor:         pointer !default;
-$custom-range-track-bg:             $gray-300 !default;
+$custom-range-track-bg:             $primary; // $gray-300 !default;
 $custom-range-track-border-radius:  1rem !default;
 $custom-range-track-box-shadow:     inset 0 .25rem .25rem rgba($black, .1) !default;
 
@@ -807,7 +808,7 @@ $navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
 
 $dropdown-min-width:                10rem !default;
 $dropdown-padding-y:                .5rem !default;
-$dropdown-spacer:                   .125rem !default;
+$dropdown-spacer:                   0.5rem; //.125rem !default;
 $dropdown-font-size:                $font-size-base !default;
 $dropdown-color:                    $body-color !default;
 $dropdown-bg:                       $white !default;
@@ -819,9 +820,9 @@ $dropdown-divider-bg:               $gray-200 !default;
 $dropdown-divider-margin-y:         $nav-divider-margin-y !default;
 $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
 
-$dropdown-link-color:               $gray-900 !default;
+$dropdown-link-color:               $black; // $gray-900 !default;
 $dropdown-link-hover-color:         darken($gray-900, 5%) !default;
-$dropdown-link-hover-bg:            $gray-100 !default;
+$dropdown-link-hover-bg:            $light; // $gray-100 !default;
 
 $dropdown-link-active-color:        $component-active-color !default;
 $dropdown-link-active-bg:           lighten($primary, 30%);//$component-active-bg !default;
@@ -829,7 +830,7 @@ $dropdown-link-active-bg:           lighten($primary, 30%);//$component-active-b
 $dropdown-link-disabled-color:      $gray-600 !default;
 
 $dropdown-item-padding-y:           .25rem !default;
-$dropdown-item-padding-x:           1.5rem !default;
+$dropdown-item-padding-x:           1rem; // 1.5rem !default;
 
 $dropdown-header-color:             $gray-600 !default;
 
@@ -847,16 +848,16 @@ $pagination-line-height:            1.25 !default;
 $pagination-color:                  $secondary; // $link-color !default;
 $pagination-bg:                     $transparent; // $white !default;
 $pagination-border-width:           $border-width !default;
-$pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           $transparent; //$gray-300 !default;
 
 $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
 $pagination-hover-color:            $link-hover-color !default;
-$pagination-hover-bg:               $primary; // $gray-200 !default;
+$pagination-hover-bg:               lighten($primary, 20%); // $gray-200 !default;
 $pagination-hover-border-color:     $gray-300 !default;
 
-$pagination-active-color:           $component-active-color !default;
+$pagination-active-color:           $secondary; // $component-active-color !default;
 $pagination-active-bg:              $white; // $component-active-bg !default;
 $pagination-active-border-color:    $pagination-active-bg !default;
 
@@ -986,21 +987,21 @@ $badge-pill-border-radius:          10rem !default;
 // Modals
 
 // Padding applied to the modal body
-$modal-inner-padding:               1rem !default;
+$modal-inner-padding:               1.5rem;//1rem !default;
 
 // Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
-$modal-footer-margin-between:       .5rem !default;
+$modal-footer-margin-between:       0;//.5rem !default;
 
-$modal-dialog-margin:               .5rem !default;
-$modal-dialog-margin-y-sm-up:       1.75rem !default;
+$modal-dialog-margin:               0; //.5rem !default;
+$modal-dialog-margin-y-sm-up:       0; //1.75rem !default;
 
 $modal-title-line-height:           $line-height-base !default;
 
 $modal-content-color:               null !default;
 $modal-content-bg:                  $white !default;
 $modal-content-border-color:        rgba($black, .2) !default;
-$modal-content-border-width:        $border-width !default;
-$modal-content-border-radius:       $border-radius-lg !default;
+$modal-content-border-width:        0;//$border-width !default;
+$modal-content-border-radius:       0;//$border-radius-lg !default;
 $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;
 $modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
 $modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
@@ -1119,8 +1120,8 @@ $breadcrumb-border-radius:          $border-radius !default;
 
 $carousel-control-color:             $white !default;
 $carousel-control-width:             15% !default;
-$carousel-control-opacity:           .5 !default;
-$carousel-control-hover-opacity:     .9 !default;
+$carousel-control-opacity:           .7; // .5 !default;
+$carousel-control-hover-opacity:     1;// !default;
 $carousel-control-transition:        opacity .15s ease !default;
 
 $carousel-indicator-width:           30px !default;
