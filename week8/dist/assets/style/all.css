@@ -16948,7 +16948,7 @@ button {
   position: -webkit-sticky;
   position: sticky;
   top: 56px;
-  z-index: 1020;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
