@@ -2,24 +2,23 @@
   :hover {
     text-decoration: none;
   }
-}
-.card-overlay {
-  height: 78px;
+  &.card-overlay {
+    height: 78px;
+  }
 }
 .card-img-overlay {
   padding: 1rem 1.5rem;
   color: #ffffff98;
+  background: linear-gradient(270deg, #00000000, #000000);
 }
 .card-img {
   height: 150px;
+  border-radius: 0px;
+  @include media-breakpoint-up(md) {
+    border-radius: .5rem 0 0 .5rem;
+  }
   @include media-breakpoint-up(lg) {
     height: 175px;
-  }
-  &.left-rounder-md {
-    border-radius: 0px;
-    @include media-breakpoint-up(md) {
-      border-radius: .5rem 0 0 .5rem;
-    }
   }
 }
 .card + .card {

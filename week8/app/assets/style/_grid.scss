@@ -7,3 +7,12 @@
     height: calc(100vh - 72px - 73px);
   }
 }
+// 固定在header下方
+.sticky-header {
+  position: sticky;
+  top: 56px;
+  z-index: $zindex-sticky;
+  @include media-breakpoint-up(md) {
+    top: 72px;
+  }
+}

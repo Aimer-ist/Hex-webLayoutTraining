@@ -1,6 +1,3 @@
-.border.border-2 {
-  border-width: 2px !important;
-}
 .img-cover {
   object-fit: cover;
   object-position: center center;
@@ -12,36 +9,6 @@
 .z-index-2 {
   z-index: 2;
 }
-.bg-gradual {
-  background: linear-gradient(270deg, #00000000, #000000);
-}
-.sticky-header {
-  position: sticky;
-  top: 56px;
-  z-index: $zindex-sticky;
-  @include media-breakpoint-up(md) {
-    top: 72px;
-  }
-}
-
-.box-shadow-none {
-  &:focus {
-    box-shadow: none;
-  }
-  &.btn{
-    &:focus,
-    &.focus {
-      box-shadow: none;
-    }
-  }
-}
-.rounded-left-md {
-  @include media-breakpoint-up(md) {
-    border-top-right-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-  }
-}
-
 .bg-white-md {
   @include media-breakpoint-up(md) {
     background-color:  $white !important;
@@ -50,36 +17,5 @@
 .bg-transparent-lg {
   @include media-breakpoint-up(lg) {
     background-color: $transparent !important;
-  }
-}
-
-// 之後放元件
-.tag {
-  padding: 2px .5rem;
-  line-height: 1;
-  border-radius: $rounded-pill;
-  color: $info;
-  background: $light;
-  font-size: 0.625rem;
-  @include media-breakpoint-up(xl) {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.75rem;
-  }
-}
-.tag + .tag {
-  margin-bottom: .25rem;
-}
-
-// 待改
-.sort__menu--scroll {
-  @include media-breakpoint-up(md) {
-    min-width: 100%;
-    overflow-x: scroll;
-  }
-  @include media-breakpoint-up(lg) {
-    overflow-x: hidden;
-  }
-  &::-webkit-scrollbar {
-    display: none;
   }
 }
