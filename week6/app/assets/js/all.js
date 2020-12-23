@@ -4,6 +4,15 @@ $(function() {
   });
 });
 
+// 偵測選單，如果是對應的頁面就加上 active 效果
+const url = window.location.pathname;
+$(".js-menulink").each(function () {
+  $(this).removeClass("active");
+  if ($(this).attr("href") == url.substring(url.lastIndexOf("/") + 1)) {
+    $(this).addClass("active");
+  }
+});
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
   'use strict';

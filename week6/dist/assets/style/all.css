@@ -7151,7 +7151,7 @@ a.close.disabled {
   background-color: #fff;
   background-clip: padding-box;
   border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
+  border-radius: 0.25rem;
   outline: 0;
 }
 
@@ -7185,8 +7185,8 @@ a.close.disabled {
           justify-content: space-between;
   padding: 1rem 1rem;
   border-bottom: 2px solid #CED4DA;
-  border-top-left-radius: calc(0.3rem - 2px);
-  border-top-right-radius: calc(0.3rem - 2px);
+  border-top-left-radius: calc(0.25rem - 2px);
+  border-top-right-radius: calc(0.25rem - 2px);
 }
 
 .modal-header .close {
@@ -7221,8 +7221,8 @@ a.close.disabled {
           justify-content: flex-end;
   padding: 0.75rem;
   border-top: 2px solid #CED4DA;
-  border-bottom-right-radius: calc(0.3rem - 2px);
-  border-bottom-left-radius: calc(0.3rem - 2px);
+  border-bottom-right-radius: calc(0.25rem - 2px);
+  border-bottom-left-radius: calc(0.25rem - 2px);
 }
 
 .modal-footer > * {
@@ -14523,16 +14523,6 @@ a:hover {
   }
 }
 
-.navbar-light .navbar-nav .nav-item.active {
-  background: #3d3d3d;
-}
-
-@media (min-width: 768px) {
-  .navbar-light .navbar-nav .nav-item.active {
-    background-color: #fff;
-  }
-}
-
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
   font-size: 1.25rem;
@@ -14545,6 +14535,16 @@ a:hover {
   }
   .navbar-light .navbar-nav .nav-link:hover {
     color: #916019;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  background: #3d3d3d;
+}
+
+@media (min-width: 768px) {
+  .navbar-light .navbar-nav .nav-link.active {
+    background-color: #fff;
   }
 }
 

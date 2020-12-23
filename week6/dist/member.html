@@ -26,23 +26,26 @@
   
     <div class="collapse navbar-collapse" id="headerMenu">
       <ul class="navbar-nav ml-md-auto px-0">
-        <li class="nav-item active text-center order-0">
-          <a class="nav-link py-4 px-0 mr-5" href="./product.html"><span class="material-icons mr-1 d-none d-md-inline">store</span> Product<span class="sr-only">(current)</span></a>
+        <li class="nav-item text-center order-0">
+          <a class="js-menulink nav-link py-4 px-0 mr-md-5" href="product.html">
+            <span class="material-icons mr-1 d-none d-md-inline">store</span> Product</a>
         </li>
         <li class="nav-item text-center order-4 order-md-1">
-          <a class="nav-link py-4 px-0 mr-5" href="login.html"><span class="material-icons mr-1 d-none d-md-inline">person</span>My page</a>
+          <a class="js-menulink nav-link py-4 px-0 mr-md-5" href="login.html">
+            <span class="material-icons mr-1 d-none d-md-inline">person</span>My page</a>
         </li>
         <li class="nav-item text-center order-1">
-          <a class="nav-link py-4 px-0 mr-5" href="#"><span class="material-icons mr-1 d-none d-md-inline">favorite</span>Wishlist</a>
+          <a class="js-menulink nav-link py-4 px-0 mr-md-5" href="#">
+            <span class="material-icons mr-1 d-none d-md-inline">favorite</span>Wishlist</a>
         </li>
         <li class="nav-item text-center d-none d-md-block order-5">
-          <a class="nav-link py-4 px-0 mr-5" href="#"><span class="material-icons mr-1">shopping_cart</span>Cart(3)</a>
+          <a class="js-menulink nav-link py-4 px-0 mr-md-5" href="#"><span class="material-icons mr-1">shopping_cart</span>Cart(3)</a>
         </li>
         <li class="nav-item d-block d-md-none text-center order-2">
-          <a class="nav-link py-4 mr-5" href="#">Blog</a>
+          <a class="js-menulink nav-link py-4 mr-md-5" href="#">Blog</a>
         </li>
         <li class="nav-item d-block d-md-none text-center order-3">
-          <a class="nav-link py-4 mr-5" href="#">Contact</a>
+          <a class="js-menulink nav-link py-4 mr-md-5" href="#">Contact</a>
         </li>
       </ul>
     </div>
@@ -92,8 +95,12 @@
         </div>
         <div class="form-group row no-gutters">
           <label for="gender" class="col-3 col-xl-2 col-form-label">會員性別</label>
-          <div class="col-9 col-xl-7">
-            <input type="text" class="form-control" id="gender">
+          <div class="col-3 col-sm-2">
+            <select class="form-control" id="gender" name="gender">
+              <option selected disabled>性別</option>
+              <option value="女">女</option>
+              <option value="男">男</option>
+            </select>
           </div>
         </div>
         <div class="form-group row no-gutters">
@@ -105,11 +112,11 @@
         <div class="form-group row no-gutters">
           <label for="phone" class="col-3 col-xl-2 col-form-label">手機號碼</label>
           <div class="col-9 col-xl-7">
-            <input type="text" class="form-control" id="phone">
+            <input type="tel" class="form-control" id="phone">
           </div>
         </div>
         <div class="form-group row no-gutters">
-          <label for="phone" class="col-3 col-xl-2 col-form-label">聯絡地址</label>
+          <label for="country_name" class="col-3 col-xl-2 col-form-label">聯絡地址</label>
           <div class="col-9 col-xl-7">
             <div class="form-row mb-2">
               <div class="col-8 col-md-6">
@@ -226,24 +233,24 @@
       <table class="table table-sm table-hover w-100 mb-0">
         <tbody>
           <tr class="row no-gutters">
-            <th class="col-4 col-md-3 col-lg-4">購物車</th>
-            <td class="col-8 col-md-9 col-lg-8 pl-2">56</td>
+            <th class="col-3 col-lg-4">購物車</th>
+            <td class="col-9 col-lg-8 pl-2">56</td>
           </tr>
           <tr class="row no-gutters">
-            <th class="col-4 col-md-3 col-lg-4">我的收藏</th>
-            <td class="col-8 col-md-9 col-lg-8 pl-2">23</td>
+            <th class="col-3 col-lg-4">我的收藏</th>
+            <td class="col-9 col-lg-8 pl-2">23</td>
           </tr>
           <tr class="row no-gutters">
-            <th class="col-4 col-md-3 col-lg-4">我的訂單</th>
-            <td class="col-8 col-md-9 col-lg-8 pl-2">8</td>
+            <th class="col-3 col-lg-4">我的訂單</th>
+            <td class="col-9 col-lg-8 pl-2">8</td>
           </tr>
           <tr class="row no-gutters">
-            <th class="col-4 col-md-3 col-lg-4">會員紅利</th>
-            <td class="col-8 col-md-9 col-lg-8 pl-2">2680</td>
+            <th class="col-3 col-lg-4">會員紅利</th>
+            <td class="col-9 col-lg-8 pl-2">2680</td>
           </tr>
           <tr class="row no-gutters">
-            <th class="col-4 col-md-3 col-lg-4">邀請碼</th>
-            <td class="col-8 col-md-9 col-lg-8 pl-2">TK2075</td>
+            <th class="col-3 col-lg-4">邀請碼</th>
+            <td class="col-9 col-lg-8 pl-2">TK2075</td>
           </tr>
         </tbody>
       </table>

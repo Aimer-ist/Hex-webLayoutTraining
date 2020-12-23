@@ -43,12 +43,6 @@
         }
       }
     }
-    &.active {
-      background: darken($secondary-dark, 20%);
-      @include media-breakpoint-up(md) {
-        background-color: $white;
-      }
-    }
   }
   .nav-link {
     color: $white;
@@ -58,6 +52,12 @@
       color: $navbar-light-color;
       &:hover {
         color: $primary;
+      }
+    }
+    &.active {
+      background: darken($secondary-dark, 20%);
+      @include media-breakpoint-up(md) {
+        background-color: $white;
       }
     }
   }
