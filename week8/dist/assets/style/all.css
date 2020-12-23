@@ -17560,6 +17560,10 @@ button {
   }
 }
 
+.botoom-6 {
+  bottom: 1.5rem;
+}
+
 @-webkit-keyframes rotate180 {
   from {
     -webkit-transform: rotate(0deg);
@@ -17811,6 +17815,37 @@ button {
 
 .tag + .tag {
   margin-bottom: .25rem;
+}
+
+.login {
+  height: calc(100vh - 82px);
+}
+
+.login__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .login__bg {
+    background: url("../images/login.jpg") center/cover no-repeat;
+  }
+}
+
+@media (min-width: 992px) {
+  .login__bg {
+    width: 63.5%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .login__bg {
+    width: 59%;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
