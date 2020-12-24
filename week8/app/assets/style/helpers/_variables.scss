@@ -309,6 +309,10 @@ $font-family-raleway:  'Raleway',
                         -apple-system, BlinkMacSystemFont, // Mac 
                         "Segoe UI", "Microsoft JhengHei", // 微軟
                         "Helvetica Neue", Arial, sans-serif; 
+$font-family-roboto:    'Roboto','Open Sans',
+                        -apple-system, BlinkMacSystemFont, // Mac 
+                        "Segoe UI", "Microsoft JhengHei", // 微軟
+                        "Helvetica Neue", Arial, sans-serif; 
 
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
@@ -969,16 +973,16 @@ $toast-header-border-color:         rgba(0, 0, 0, .05) !default;
 
 // Badges
 
-$badge-font-size:                   75% !default;
-$badge-font-weight:                 $font-weight-bold !default;
-$badge-padding-y:                   .25em !default;
+$badge-font-size:                   50% !default;
+$badge-font-weight:                 $font-weight-base; // $font-weight-bold !default;
+$badge-padding-y:                   .5rem; //.25em !default;
 $badge-padding-x:                   .4em !default;
 $badge-border-radius:               $border-radius !default;
 
 $badge-transition:                  $btn-transition !default;
 $badge-focus-width:                 $input-btn-focus-width !default;
 
-$badge-pill-padding-x:              .6em !default;
+$badge-pill-padding-x:              .625rem; // .6em !default;
 // Use a higher than normal value to ensure completely rounded edges when
 // customizing padding or font-size on labels.
 $badge-pill-border-radius:          10rem !default;

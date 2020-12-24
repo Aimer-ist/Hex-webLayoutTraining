@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700;800&family=Roboto&display=swap");
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -5835,9 +5835,9 @@ input[type="button"].btn-block {
 
 .badge {
   display: inline-block;
-  padding: 0.25em 0.4em;
-  font-size: 75%;
-  font-weight: 700;
+  padding: 0.5rem 0.4em;
+  font-size: 50%;
+  font-weight: 400;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -5872,8 +5872,8 @@ a.badge:hover, a.badge:focus {
 }
 
 .badge-pill {
-  padding-right: 0.6em;
-  padding-left: 0.6em;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
   border-radius: 10rem;
 }
 
@@ -16929,18 +16929,18 @@ button {
 }
 
 .grid-h {
-  height: calc(100vh - 72px - 107px);
+  min-height: calc(100vh - 72px - 107px);
 }
 
 @media (min-width: 768px) {
   .grid-h {
-    height: calc(100vh - 72px - 70px);
+    min-height: calc(100vh - 72px - 70px);
   }
 }
 
 @media (min-width: 992px) {
   .grid-h {
-    height: calc(100vh - 72px - 73px);
+    min-height: calc(100vh - 72px - 73px);
   }
 }
 
@@ -17188,6 +17188,14 @@ button {
 
 .font-family-raleway {
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+}
+
+.font-family-roboto {
+  font-family: "Roboto", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+}
+
+.line-height-1 {
+  line-height: 1;
 }
 
 @media (min-width: 768px) {
@@ -17564,6 +17572,15 @@ button {
   bottom: 1.5rem;
 }
 
+.border-2 {
+  border-width: 2px !important;
+}
+
+.rounded-lg-bottom {
+  border-bottom-right-radius: 0.5rem !important;
+  border-bottom-left-radius: 0.5rem !important;
+}
+
 @-webkit-keyframes rotate180 {
   from {
     -webkit-transform: rotate(0deg);
@@ -17845,6 +17862,30 @@ button {
 @media (min-width: 1440px) {
   .login__bg {
     width: 59%;
+  }
+}
+
+.img_profile {
+  height: 64px;
+  width: 64px;
+}
+
+.member .card-img {
+  height: 226px;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+@media (min-width: 768px) {
+  .member .card-img {
+    border-top-right-radius: 0;
+    height: 186px;
+  }
+}
+
+@media (min-width: 992px) {
+  .member .card-img {
+    height: 175px;
   }
 }
 
