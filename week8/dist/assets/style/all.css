@@ -5455,7 +5455,7 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 0 solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0;
 }
 
 .card > hr {
@@ -17190,6 +17190,10 @@ button {
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
 }
 
+.font-family-openSnas {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+}
+
 .font-family-roboto {
   font-family: "Roboto", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
 }
@@ -17576,9 +17580,31 @@ button {
   border-width: 2px !important;
 }
 
+@media (min-width: 768px) {
+  .border-0-md {
+    border-width: 0px !important;
+  }
+}
+
 .rounded-lg-bottom {
   border-bottom-right-radius: 0.5rem !important;
   border-bottom-left-radius: 0.5rem !important;
+}
+
+.hover--bgLight:hover {
+  background: #F1F0F8;
+}
+
+@media (min-width: 1200px) {
+  .w-xl-50 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .w-xl-100 {
+    width: 100%;
+  }
 }
 
 @-webkit-keyframes rotate180 {
@@ -17708,6 +17734,9 @@ button {
 .modal-footer.position-sticky {
   bottom: 0;
   z-index: 1;
+}
+
+.modal .confirm {
   background-color: rgba(0, 0, 0, 0.85);
   border-radius: .5rem .5rem 0 0;
 }
@@ -17886,6 +17915,16 @@ button {
 @media (min-width: 992px) {
   .member .card-img {
     height: 175px;
+  }
+}
+
+.detail .carousel-item img {
+  height: 247px;
+}
+
+@media (min-width: 576px) {
+  .detail .carousel-item img {
+    height: 314px;
   }
 }
 

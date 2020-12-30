@@ -25,7 +25,27 @@
 .border-2 {
   border-width: 2px!important;
 }
+.border-0-md {
+  @include media-breakpoint-up(md) {
+    border-width: 0px !important;
+  }
+}
 .rounded-lg-bottom {
   border-bottom-right-radius: $border-radius-lg !important;
   border-bottom-left-radius: $border-radius-lg !important;
+}
+.hover--bgLight {
+  &:hover {
+    background: $light;
+  }
+}
+.w-xl-50 {
+  @include media-breakpoint-up(xl) {
+    width: 50%;
+  }
+}
+.w-xl-100 {
+  @include media-breakpoint-up(xl) {
+    width: 100%;
+  }
 }
