@@ -7,7 +7,7 @@ hasSubscribe: true
 ---
 <main>
   <!-- banner -->
-  <div id="carouselInterval" class="banner carousel slide" data-ride="carousel">
+  <div id="carouselInterval" class="banner carousel slide" data-ride="carousel" data-aos="fade-zoom-in" data-aos-easing="linear">
     <div class="carousel-inner">
       <div class="carousel-item active position-relative" data-interval="10000">
         <div class="banner__img bg-cover d-flex align-items-center justify-content-center" style="background-image: url('./assets/images/index-banner.jpg');">
@@ -32,7 +32,7 @@ hasSubscribe: true
     </a>
   </div>
   <!-- search -->
-  <div class="container d-flex justify-content-center mt-n12 mb-6">
+  <div class="container d-flex justify-content-center mt-n12 mb-6" data-aos="fade-up">
     <div class="row justify-content-center w-100">
       <div class="col-md-10 p-6 bg-light rounded-lg">
         <form class="d-lg-flex">
@@ -127,8 +127,8 @@ hasSubscribe: true
   </div>
   <!-- Top Choices -->
   <section class="container mb-12">
-    <h3 class="h4 h2-md mb-6">Top Choices</h3>
-    <ul class="nav font-family-raleway font-weight-bold h5 h4-md mb-6" role="tablist" id="nav-tab">
+    <h3 class="h4 h2-md mb-6" data-aos="fade-up" data-aos-delay="300">Top Choices</h3>
+    <ul class="nav font-family-raleway font-weight-bold h5 h4-md mb-6" role="tablist" id="nav-tab" data-aos="fade-up" data-aos-delay="600">
       <li class="nav-item">
         <a class="nav-link nav-link--border active" id="navTab-Bali" data-toggle="tab"  href="#nav-Bali" role="tab" aria-controls="nav-bali" aria-selected="true">Bali<sup>128</sup></a>
       </li>
@@ -139,7 +139,7 @@ hasSubscribe: true
         <a class="nav-link nav-link--border" id="navTab-Taipei" data-toggle="tab"  href="#nav-Taipei" role="tab" aria-controls="nav-Taipei" aria-selected="false">Taipei<sup>53</sup></a>
       </li>
     </ul>
-    <div class="tab-content" id="myTabContent">
+    <div class="tab-content" id="myTabContent" data-aos="fade-up" data-aos-delay="900">
       <div class="tab-pane fade show active" id="nav-Bali" role="tabpanel" aria-labelledby="navTab-Bali">
         <div class="swiper-container">
           <ul class="swiper-wrapper row list-unstyled flex-nowrap pb-6">
@@ -368,8 +368,8 @@ hasSubscribe: true
   </section>
   <!-- Popular Destinations -->
   <section class="container mb-12">
-    <h3 class="h4 h2-md mb-6">Popular Destinations</h3>
-    <ul class="row list-unstyled">
+    <h3 class="h4 h2-md mb-6" data-aos="fade-up">Popular Destinations</h3>
+    <ul class="row list-unstyled" data-aos="fade-up">
       <li class="col-md-6 col-lg-4 mb-2 mb-md-4">
         <a href="#" class="card card-overlay">
           <img src="./assets/images/Osaka.jpg" alt="" class="rounded-lg h-100 img-cover">
@@ -446,12 +446,12 @@ hasSubscribe: true
   </section>
   <!-- Get Inspiration -->
   <section class="container mb-12">
-    <div class="d-flex justify-content-between align-items-center mb-6">
+    <div class="d-flex justify-content-between align-items-center mb-6"  data-aos="fade-up">
       <h3 class="h4 h2-md">Get Inspiration</h3>
       <button class="btn btn-sm btn-outline-primary font-weight-bold">SEE MORE</button>
     </div>
-    <ul class="row list-unstyled flex-nowrap overflow-auto pb-6">
-      <li class="col-9 col-md-4">
+    <ul class="row list-unstyled flex-nowrap overflow-auto pb-6" data-aos-delay="100">
+      <li class="col-9 col-md-4" data-aos="flip-left">
         <div class="card">
           <div class="bg-cover rounded-lg mb-6" style="background-image: url('./assets/images/italy.jpg'); padding-top: 75%;"></div>
           <div class="card-body">
@@ -460,7 +460,7 @@ hasSubscribe: true
           </div>
         </div>
       </li>
-      <li class="col-9 col-md-4">
+      <li class="col-9 col-md-4" data-aos="flip-left" data-aos-delay="300">
         <div class="card">
           <div class="bg-cover rounded-lg mb-6" style="background-image: url('./assets/images/Thailand.jpg'); padding-top: 75%;"></div>
           <div class="card-body">
@@ -469,7 +469,7 @@ hasSubscribe: true
           </div>
         </div>
       </li>
-      <li class="col-9 col-md-4">
+      <li class="col-9 col-md-4" data-aos="flip-left" data-aos-delay="500">
         <div class="card">
           <div class="bg-cover rounded-lg mb-6" style="background-image: url('./assets/images/NewZealand.jpg'); padding-top: 75%;"></div>
           <div class="card-body">

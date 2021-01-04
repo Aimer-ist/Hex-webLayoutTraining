@@ -11,6 +11,10 @@ $(function () {
     navigation: {
       nextEl: ".swiper-button-next"
     }
+  }); // Initialize AOS
+
+  AOS.init({
+    duration: 1500
   });
 });
 $(".js-reserveControl").click(function (e) {
