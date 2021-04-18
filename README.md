@@ -17,3 +17,7 @@
 
 ### [Joanne-LandingPage](https://aimer-ist.github.io/Hex-webLayoutTraining/Joanne-LandingPage/index.html) | [Code](https://github.com/Aimer-ist/Hex-webLayoutTraining/tree/master/Joanne-LandingPage)
 ![](https://i.imgur.com/rnCsaHE.png)
+
+## 責任聲明
+使用的是已授權 Adobe XD 設計稿。
+此設計稿僅授權提供『六角學員 - 網頁切版直播秋季班』學員，未授權者請勿使用，避免侵權問題。
